@@ -1,0 +1,59 @@
+.banner{
+//   background-image: url(salon-clim.jpg);
+//   height: 600px;
+//     background-position: center;
+//     opacity: 0.7;
+//     background-size: cover;
+//     // background-attachment: fixed;
+//     justify-content: center;
+//     display: flex;
+//     justify-content: space-between;
+//     // align-items: center;
+    position: relative;
+    height: 600px;
+    // width: 100%;
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+}
+
+.banner::before {
+  content: "";
+  background-image: url(salon-clim.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.85;
+}
+
+.banner img {
+  position: relative;
+  height: 80px;
+  margin: 28px 48px;
+}
+
+.banner .insurance {
+
+}
+
+.title-homepage {
+  background-color: white;
+  padding: 96px 140px;
+}
+
+.title-homepage h2 {
+  margin: 0;
+  padding-bottom: 24px;
+  color: rgba( 69, 155, 218, 100%);
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.title-homepage p {
+  margin: 0;
+  color: rgba( 104, 104, 104, 100%);
+}
