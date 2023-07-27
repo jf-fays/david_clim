@@ -1,7 +1,7 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
     <div class="container-fluid">
         <div class="info-contact">
-            <%= link_to "#", class: "navbar-brand" do %>
+            <%= link_to root_path, class: "navbar-brand" do %>
             <%= image_tag "logo_name.png" %>
             <% end %>
             <div class="info">
@@ -9,7 +9,7 @@
                     <p>06 11 96 44 86</p>
                 </div>
                 <div class="quotes">
-                    <%= link_to "Demandez un devis", "#", class: "nav-link" %>
+                    <%= link_to "Demandez un devis", new_contact_path, class: "nav-link" %>
                 </div>
             </div>
         </div>
@@ -33,7 +33,7 @@
                     <%= link_to "Réalisations", "#", class: "nav-link" %>
                 </li>
                 <li class="nav-item">
-                    <%= link_to "Contact", "#", class: "nav-link" %>
+                    <%= link_to "Contact", new_contact_path, class: "nav-link" %>
                 </li>
             </ul>
         </div>
