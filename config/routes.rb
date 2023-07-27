@@ -4,4 +4,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  get "contact", to: "pages#contact_form"
+
+  resources :contacts, only: [:new, :create ]
+    get '/contacts', to: 'contacts#new'
+    # get 'contacts/sent'
 end

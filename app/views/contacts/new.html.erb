@@ -1,0 +1,77 @@
+<div class="contact" id="contact">
+    <div class="contact-banner">
+        <div class="contact-banner-text">
+            <h1>DEMANDE DE DEVIS</h1>
+            <p>Pour effectuer une demande de devis gratuit, veuillez compléter le formulaire ci-dessous :</p>
+        </div>
+    </div>
+
+    <div class="contact-text">
+        <p>David Clim vous accompagne pour tous vos projets de climatisation, qu'il s'agisse d'installation, de dépannage ou encore d'entretien à Fréjus et ses alentours.</p>
+        <p>Vous pouvez aussi nous contacter par téléphone ou par mail :</p>
+        <p><i class="fa-solid fa-phone" style="color: #2576ce;"></i><span style="padding-left: 14px;">06 11 96 44 86</span></p>
+        <p><i class="fa-solid fa-envelope" style="color: #2576ce;"></i><span style="padding-left: 14px;">contact@davidclim.fr</span></p>
+    </div>
+
+      <%= form_for @contact do |form| %>
+
+      <% if @contact.errors.any? %>
+          <div id="error_explanation" class="bg-rose-200 pt-3 pb-1 mb-4 px-4 rounded-md">
+              <div class="font-bold text-rose-700 text-sm pb-4"><%= pluralize(@contact.errors.count, "error") %> prohibited this page from being saved:</div>
+
+              <ul class="pb-0 mb-0">
+                  <% @contact.errors.each do |error| %>
+                      <li class="text-rose-600 pl-4 text-sm"><%= error.full_message %></li>
+                  <% end %>
+              </ul>
+          </div>
+      <% end %>
+
+
+    <div class="field">
+        <div class="field_contact">
+          <div class="field_last_name">
+            <%= form.label :"Nom *" %>
+            <%= form.text_field :last_name %>
+          </div>
+
+          <div class="field_first_name">
+            <%= form.label :"Prénom *" %>
+            <%= form.text_field :first_name %>
+          </div>
+
+          <div class="field_email">
+              <%= form.label :"email *" %>
+              <%= form.email_field :email %>
+          </div>
+
+          <div class="field_phone_number">
+              <%= form.label :"Téléphone *" %>
+              <%= form.text_field :phone_number %>
+          </div>
+
+          <div class="field_city">
+              <%= form.label :"Ville *" %>
+              <%= form.text_field :city %>
+          </div>
+        </div>
+
+          <div class="field_content" >
+              <%= form.label :"Rédigez votre message ici *" %>
+              <%= form.text_area :message, rows: "6" %>
+          </div>
+
+
+          <div class="hidden d-none">
+              <%= form.label :nickname %>
+              <%= form.text_field :nickname %>
+          </div>
+
+          <div class="actions flex justify-end">
+              <%= form.submit "Envoyer" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
