@@ -1,5 +1,5 @@
 class Contact < MailForm::Base
-  attribute :first_name, validate: true, length: { minimum: 2 }
+  # attribute :first_name, validate: true, length: { minimum: 2 }
   attribute :last_name, validate: true, length: { minimum: 2 }
   attribute :phone_number, validate: true, length: { minimum: 10 }
   attribute :city, validate: true
