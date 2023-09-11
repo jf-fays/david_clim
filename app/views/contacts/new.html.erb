@@ -3,77 +3,80 @@
         <div class="contact-banner-text">
             <h1>DEMANDE DE DEVIS</h1>
             <p>Pour effectuer une demande de devis gratuit, veuillez compléter le formulaire ci-dessous :</p>
+            <%# <p>Tous les champs sont obligatoires</p> %>
         </div>
     </div>
+    <div class="contact-box">
 
-    <div class="contact-text">
-        <p>David Clim vous accompagne pour tous vos projets de climatisation, qu'il s'agisse d'installation, de dépannage ou encore d'entretien à Fréjus et ses alentours.</p>
-        <p>Vous souhaitez obtenir des informations (étude, devis, RDV, etc…) pour votre projet d’installation ou de rénovation d’une climatisation ?</p>
-        <p>Merci de compléter ce formulaire afin que nous puissions répondre avec  précision à votre demande et vous recontacter dès prise de connaissance de ces informations.</p>
-        <p>Vous pouvez aussi nous contacter par téléphone ou par mail :</p>
-        <p><i class="fa-solid fa-phone" style="color: #2576ce;"></i><span style="padding-left: 14px;">06 11 96 44 86</span></p>
-        <p><i class="fa-solid fa-envelope" style="color: #2576ce;"></i><span style="padding-left: 14px;">contact@davidclim.fr</span></p>
-    </div>
+        <div class="contact-form">
+            <%= simple_form_for @contact do |form| %>
 
-      <%= form_for @contact do |form| %>
+                <% if @contact.errors.any? %>
+                    <div id="error_explanation" class="bg-rose-200 pt-3 pb-1 mb-4 px-4 rounded-md">
+                        <div class="font-bold text-rose-700 text-sm pb-4"><%= pluralize(@contact.errors.count, "error") %> prohibited this page from being saved:</div>
 
-      <% if @contact.errors.any? %>
-          <div id="error_explanation" class="bg-rose-200 pt-3 pb-1 mb-4 px-4 rounded-md">
-              <div class="font-bold text-rose-700 text-sm pb-4"><%= pluralize(@contact.errors.count, "error") %> prohibited this page from being saved:</div>
-
-              <ul class="pb-0 mb-0">
-                  <% @contact.errors.each do |error| %>
-                      <li class="text-rose-600 pl-4 text-sm"><%= error.full_message %></li>
-                  <% end %>
-              </ul>
-          </div>
-      <% end %>
+                        <ul class="pb-0 mb-0">
+                            <% @contact.errors.each do |error| %>
+                                <li class="text-rose-600 pl-4 text-sm"><%= error.full_message %></li>
+                            <% end %>
+                        </ul>
+                    </div>
+                <% end %>
 
 
-    <div class="field">
-        <div class="field_contact">
-          <div class="field_last_name">
-            <%= form.label :"Nom *" %>
-            <%= form.text_field :last_name %>
-          </div>
+                <div class="field">
+                    <div class="field_contact1">
+                      <div class="field_last_name">
+                        <%# <%= form.label :"Nom *" %>
+                        <%= form.text_field :last_name, placeholder: 'Nom *' %>
+                      </div>
 
-          <%# <div class="field_first_name">
-            <%= form.label :"Prénom *" %>
-            <%# <%= form.text_field :first_name %>
-          <%# </div> %>
+                      <%# <div class="field_first_name">
+                        <%= form.label :"Prénom *" %>
+                        <%# <%= form.text_field :first_name %>
+                      <%# </div> %>
 
-          <div class="field_email">
-              <%= form.label :"email *" %>
-              <%= form.email_field :email %>
-          </div>
+                      <div class="field_email">
+                          <%# <%= form.label :"email *" %>
+                          <%= form.email_field :email, placeholder: 'Email *'%>
+                      </div>
+                    </div>
 
-          <div class="field_phone_number">
-              <%= form.label :"Téléphone *" %>
-              <%= form.text_field :phone_number %>
-          </div>
+                    <div class="field_contact2">
+                      <div class="field_phone_number">
+                          <%# <%= form.label :"Téléphone *" %>
+                          <%= form.text_field :phone_number, placeholder: 'Téléphone *' %>
+                      </div>
 
-          <div class="field_city">
-              <%= form.label :"Ville *" %>
-              <%= form.text_field :city %>
-          </div>
+                      <div class="field_city">
+                          <%# <%= form.label :"Ville *" %>
+                          <%= form.text_field :city, placeholder: 'Ville *' %>
+                      </div>
+                    </div>
+
+                    <div class="field_content" >
+                        <%# <%= form.label :"Rédigez votre message ici *" %>
+                        <%= form.text_area :message, placeholder: 'Rédigez votre message ici *', rows: "6" %>
+                    </div>
+
+                    <div class="hidden d-none">
+                        <%= form.label :nickname %>
+                        <%= form.text_field :nickname %>
+                    </div>
+
+                    <div class="actions flex justify-end">
+                        <%= form.submit "Envoyer" %>
+                    </div>
+                </div>
+            <% end %>
         </div>
-
-          <div class="field_content" >
-              <%= form.label :"Rédigez votre message ici *" %>
-              <%= form.text_area :message, rows: "6" %>
-          </div>
-
-
-          <div class="hidden d-none">
-              <%= form.label :nickname %>
-              <%= form.text_field :nickname %>
-          </div>
-
-          <div class="actions flex justify-end">
-              <%= form.submit "Envoyer" %>
-          </div>
-        <% end %>
-      </div>
+        <div class="contact-text">
+            <p>David Clim vous accompagne pour tous vos projets de climatisation, qu'il s'agisse d'installation, de dépannage ou encore d'entretien à Fréjus et ses alentours.</p>
+            <p>Vous souhaitez obtenir des informations (étude, devis, RDV, etc…) pour votre projet d’installation ou de rénovation d’une climatisation ?</p>
+            <p>Merci de compléter ce formulaire afin que nous puissions répondre avec  précision à votre demande et vous recontacter dès prise de connaissance de ces informations.</p>
+            <p>Vous pouvez aussi nous contacter par téléphone ou par mail :</p>
+            <p><i class="fa-solid fa-phone" style="color: #2576ce;"></i><span style="padding-left: 14px;">06 11 96 44 86</span></p>
+            <p><i class="fa-solid fa-envelope" style="color: #2576ce;"></i><span style="padding-left: 14px;">contact@davidclim.fr</span></p>
+        </div>
     </div>
-  </div>
 </div>
