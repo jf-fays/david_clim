@@ -8,9 +8,8 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contacts_params)
     @contact.request = request
     if @contact.deliver
-      # flash[:notice] = "Your profile has been updated."
-      redirect_to new_contact_path
-      flash[:message] = "Message envoyé!"
+      redirect_to new_contact_path, notice: "Message envoyé!"
+      # flash[:message] = "Message envoyé!"
     else
       # flash.now[:error] = "Impossible d'envoyer le message, veuillez remplir tous les champs requis!"
       redirect_to new_contact_path, notice: "Impossible d'envoyer le message, veuillez remplir tous les champs requis!"
