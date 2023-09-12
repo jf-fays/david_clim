@@ -1,21 +1,18 @@
 .footer{
-  // background-color: rgba( 17, 48, 90, 100%);
-  // background-color: rgba( 26, 26, 26, 100%);
-  // background-color: rgba( 240, 188, 69, 100%);
-  background-color: rgba( 40, 42, 43, 100%);
+  background-color: rgba( 16, 24, 43, 100%);
   width: 100%;
-  height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
+  position: relative;
 }
 
 .footer-element {
   display: flex;
   justify-content: flex-start;
-  // align-items: center;
   flex-direction:column;
-  // margin: auto;
+  margin-top: 48px;
   padding: 30px;
 }
 
