@@ -21,16 +21,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item active">
-                    <%= link_to "Installation", "#", class: "nav-link" %>
+                    <%= link_to "Accueil", root_path, class: "nav-link" %>
+                </li>
+                <li class="nav-item active">
+                    <%= link_to "Installation", installation_climatisation_path, class: "nav-link" %>
                 </li>
                 <li class="nav-item">
-                    <%= link_to "Maintenance <br /> & Dépannage".html_safe, "#", class: "nav-link" %>
+                    <%= link_to "Maintenance <br /> & Nettoyage".html_safe, maintenance_nettoyage_climatisation_path, class: "nav-link" %>
                 </li>
                 <li class="nav-item">
-                    <%= link_to "Climatisation réversible <br />/ Pompe à chaleur".html_safe, "#", class: "nav-link" %>
+                    <%= link_to "Dépannage".html_safe, depannage_climatisation_path, class: "nav-link" %>
                 </li>
+                <%# <li class="nav-item">
+                    <%= link_to "Climatisation réversible <br />/ Pompe à chaleur".html_safe, climatisation_reversible_pompe_a_chaleur_path, class: "nav-link" %>
+                <%# </li> %>
                 <li class="nav-item">
-                    <%= link_to "Réalisations", "#", class: "nav-link" %>
+                    <%= link_to "Réalisations", realisation_climatisation_path, class: "nav-link" %>
                 </li>
                 <li class="nav-item">
                     <%= link_to "Contact", new_contact_path, class: "nav-link" %>
