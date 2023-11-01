@@ -12,6 +12,7 @@ import "bootstrap"
 // import "carousel"
 
 // console.log('Hello world3');
-import { carousel } from "./components/carousel";
-
-carousel()
+import { initCarousel } from "./components/carousel";
+document.addEventListener("turbo:load", () => {
+  initCarousel();
+});
