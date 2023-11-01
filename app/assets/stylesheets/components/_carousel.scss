@@ -98,8 +98,8 @@ body {
 
 .spinner {
     position: absolute;
-    // width: $width;
-    width: calc(50vw - 27px);
+    width: $width;
+    // width: calc(50vw - 27px);
     height: $height;
     top: 0;
     left: 0;
@@ -214,19 +214,19 @@ body {
         margin-top: -3vw;
         text-align: center;
         font-family: oswald;
-        font-size: 5vw;
+        font-size: 3vw;
         height: 10vw;
         opacity: 1;
         color: #fff;
         width: 100%;
-        letter-spacing: 0.15em;
-        line-height: 0.6;
+        letter-spacing: 0.08em;
+        // line-height: 0.6;
     }
 
     span {
-        font-size: 1vw;
+        font-size: 3vw;
         font-weight: 300;
-        letter-spacing: 0.2em;
+        letter-spacing: 0.08em;
         opacity: 0.9;
         font-family: Merriweather;
     }
@@ -253,6 +253,7 @@ body {
             text-transform: uppercase;
             letter-spacing: 0.15em;
             font-size: 0.85em;
+            color: #fff;
         }
     }
 
@@ -269,8 +270,8 @@ body {
 
 [data-type="iceland"] {
     .content__left {
-        background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/iceland.jpg');
-
+        // background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/iceland.jpg');
+        background-image: url('climatisation-murale.jpeg');
         .spinner--right & {
             background-image: none;
         }
@@ -290,7 +291,8 @@ body {
 
 [data-type="usa"] {
     .content__left {
-        background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/usa.jpg');
+        // background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/usa.jpg');
+        background-image: url('climatisation-gainable.jpeg');
 
         .spinner--right & {
             background-image: none;
@@ -300,7 +302,8 @@ body {
 
 [data-type="peru"] {
     .content__left {
-        background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/peru.jpg');
+        // background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/peru.jpg');
+        background-image: url('climatisation-console.jpeg');
 
         .spinner--right & {
             background-image: none;

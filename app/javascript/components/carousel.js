@@ -1,4 +1,4 @@
-export const carousel = () => {
+export const initCarousel = () => {
 
   let activeIndex = 0
   let limit = 0
