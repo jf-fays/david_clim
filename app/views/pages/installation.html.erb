@@ -13,6 +13,7 @@
         </div>
     </div>
 </div>
+
 <div class="installation-list">
     <div class="container installation-list-numbers">
         <p>Notre équipe d'experts en climatisation est formée et certifiée pour prendre en charge tous les aspects de l'installation de votre système de climatisation. Nos services comprennent :</p>
@@ -31,19 +32,41 @@
             </div>
       </div>
 </div>
-<div class="container choice-list">
-    <h1>Diverses options de climatisation sont disponibles.</h1>
-        <ul>
-            <li>Climatiseur cassette</li>
-            <li>Climatiseur gainable</li>
-            <li>Climatiseur console</li>
-            <li>Climatiseur murale</li>
-        </ul>
-</div>
-    <%= render 'shared/carousel' %>
-    <%# <p>Vous ne disposez pas d'un système de climatisation ? Êtes-vous à la recherche d'une solution pour vous protéger des fortes chaleurs estivales ? Notre équipe est prête à intervenir pour installer votre climatisation à Fréjus et dans les environs."</p> %>
 
-<p>Vous souhaitez faire installer votre climatisation pour cet été ?</p>
-<p>Lorsque la chaleur estivale bat son plein, il est essentiel de disposer d'un système de climatisation fiable pour maintenir votre espace frais et agréable.
-<p>Préparez-vous à affronter la chaleur estivale en toute sérénité. Contactez-nous dès aujourd'hui pour planifier l'installation de votre climatisation. Nous sommes là pour vous offrir un environnement frais et confortable, quel que soit le temps qu'il fait dehors.</p>
-<p>Pendant la saison estivale, notre région est fréquemment confrontée à des températures élevées. Chez David Clim, nous avons une équipe qualifiée d'installateurs expérimentés dans la gestion des systèmes de climatisation de diverses marques, notamment Hitachi, Daikin, Toshiba et Mitsubishi, pour répondre à vos besoins.</p>
+<div class="container information-choice-text">
+    <h1>Vous rêvez de vivre dans un espace confortable toute l'année, qu'il fasse chaud en été ou froid en hiver ?</h1>
+    <p>L'installation d'un système de climatisation moderne peut transformer cette vision en réalité. Notre équipe est là pour vous aider à créer un environnement parfaitement tempéré, tout en vous permettant de réaliser des économies d'énergie.</p>
+    <p>La climatisation d'aujourd'hui est plus efficace que jamais, offrant un confort inégalé tout en minimisant votre empreinte carbone. Grâce à des technologies avancées, vous pouvez contrôler la température de votre espace avec précision, assurant ainsi une atmosphère agréable en toute saison.</p>
+    <p>Laissez-nous vous guider dans le choix du système de climatisation qui convient le mieux à votre domicile ou à votre entreprise.</p>
+</div>
+
+<div class="container choice-list">
+  <div class="introduction-choice">
+    <div class="choice-list-title">
+        <h2>Diverses options de climatisation sont disponibles</h2>
+        <p>_______</p>
+    </div>
+    <div class="choice-list-ul">
+        <div class="choice-list-1">
+            <ul>
+                <li><i class="fa-solid fa-angles-down"></i>Climatiseur Murale</li>
+                <li><i class="fa-solid fa-angles-down"></i>Climatiseur Cassette</li>
+            </ul>
+        </div>
+        <div class="choice-list-2">
+            <ul>
+                <li><i class="fa-solid fa-angles-down"></i>Climatiseur Gainable</li>
+                <li><i class="fa-solid fa-angles-down"></i>Climatiseur Console</li>
+            </ul>
+        </div>
+    </div>
+  </div>
+</div>
+
+<%= render 'shared/carousel' %>
+
+<div class="contact-btn-choice">
+    <%# <p>Contactez-nous dès aujourd'hui pour prendre le contrôle de votre climat intérieur, été comme hiver.</p> %>
+    <p>Un projet, un devis, un RDV, une maintenance ?</p>
+    <%= link_to "Contactez nous", new_contact_path, class: "button type1" %>
+</div>
