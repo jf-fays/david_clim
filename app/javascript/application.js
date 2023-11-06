@@ -12,11 +12,12 @@ import "bootstrap"
 // import "carousel"
 
 // console.log('Hello world3');
-import { initCarousel } from "./components/carousel";
-document.addEventListener("turbo:load", () => {
+import { initCarousel } from "./controllers/carousel";
+document.addEventListener("turbo:reload", () => {
   initCarousel();
 });
 
+<<<<<<< HEAD
 import { initJetTimeline } from "./components/jet_timeline";
 document.addEventListener("turbo:load", () => {
   console.log('connection jet timeline')
@@ -24,6 +25,6 @@ document.addEventListener("turbo:load", () => {
 });
 
 import { test } from "./components/test"; () => {
-  console.log('connection jet timeline')
+  console.log('test3')
   test();
 }
