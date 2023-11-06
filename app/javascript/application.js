@@ -17,7 +17,6 @@ document.addEventListener("turbo:reload", () => {
   initCarousel();
 });
 
-<<<<<<< HEAD
 import { initJetTimeline } from "./components/jet_timeline";
 document.addEventListener("turbo:load", () => {
   console.log('connection jet timeline')
