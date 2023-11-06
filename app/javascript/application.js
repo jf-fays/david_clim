@@ -16,3 +16,7 @@ import { initCarousel } from "./controllers/carousel";
 document.addEventListener("turbo:reload", () => {
   initCarousel();
 });
+
+import test from "./components/test.js"; () => {
+test()
+}
