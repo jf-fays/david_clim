@@ -13,7 +13,7 @@ import "bootstrap"
 
 // console.log('Hello world3');
 import { initCarousel } from "./controllers/carousel";
-document.addEventListener("turbo:reload", () => {
+document.addEventListener("turbo:load", () => {
   initCarousel();
 });
 
