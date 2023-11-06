@@ -16,3 +16,8 @@ import { initCarousel } from "./components/carousel";
 document.addEventListener("turbo:load", () => {
   initCarousel();
 });
+
+import { initJetTimeline } from "./components/jet_timeline";
+// document.addEventListener("turbo:load", () => {
+  initJetTimeline();
+// });

@@ -159,4 +159,4 @@ export const initCarousel = () => {
   });
 };
 
-console.log('test2')
+console.log('test2 connection')
