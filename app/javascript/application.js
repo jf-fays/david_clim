@@ -18,6 +18,12 @@ document.addEventListener("turbo:load", () => {
 });
 
 import { initJetTimeline } from "./components/jet_timeline";
-// document.addEventListener("turbo:load", () => {
+document.addEventListener("turbo:load", () => {
+  console.log('connection jet timeline')
   initJetTimeline();
-// });
+});
+
+import { test } from "./components/test"; () => {
+  console.log('connection jet timeline')
+  test();
+}
