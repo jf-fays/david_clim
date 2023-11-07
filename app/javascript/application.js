@@ -8,6 +8,12 @@ import "bootstrap"
 // require ("turbolinks")
 // // require_tree .")
 
+import { initNavbar } from "./controllers/navbar_scroll_fixed";
+document.addEventListener("turbo:load", function() {
+  console.log('connection navbar')
+  initNavbar();
+});
+
 import { initCarousel } from "./controllers/carousel";
 document.addEventListener("turbo:load", () => {
   console.log('connection carousel')

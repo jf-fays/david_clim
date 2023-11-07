@@ -43,7 +43,6 @@
   .title-homepage {
     background-color: white;
     padding: 96px 140px;
-    border-left: 1px solid rgba( 69, 155, 218, 100%);
   }
 
   .title-homepage h2 {
@@ -58,7 +57,8 @@
 
   .title-homepage p {
     margin: 0;
-    color: rgba( 104, 104, 104, 100%);
+    // color: rgba( 104, 104, 104, 100%);
+    color: rgba( 24, 55, 59, 100%);
     border-left: 3px solid #459bda;
     padding-left: 32px;
   }

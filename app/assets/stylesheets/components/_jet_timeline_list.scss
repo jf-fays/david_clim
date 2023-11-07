@@ -55,8 +55,14 @@ img {
 
 .ag-timeline_tagline {
   font-size: 40px;
-  color: rgb(84, 89, 95);
+  // color: rgb(84, 89, 95);
+  color: rgba( 24, 55, 59, 100%);
   padding-bottom: 84px;
+
+    p{
+      font-size: 1.5rem;
+      color: #f0bc45;
+    }
 }
 
 .ag-timeline_title {
