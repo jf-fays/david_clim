@@ -87,4 +87,11 @@
   .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
     border-right: 1px solid rgb(215, 218, 220);
   }
+
+  .stuck{
+    position:fixed;
+    z-index:100;
+    width:100%;
+    top:0;
+  }
 }
