@@ -25,7 +25,8 @@
               <div class="ag-timeline-card_inner">
                 <div class="ag-timeline-card_img-box">
                   <!-- Votre image ici -->
-                  <%= image_tag("test-fluide-transformed.jpeg",class:"ag-timeline-card_img", size: "640x360", alt: "test fluide étanchéité") %>
+                  <%# <%= image_tag("test-fluide-transformed.jpeg",class:"ag-timeline-card_img", size: "640x360", alt: "test fluide étanchéité") %>
+                  <img src="<%= asset_path('test-fluide-transformed.jpeg') %>" class="ag-timeline-card_img" alt="test fluide étanchéité" width="640" height="360">
                 </div>
                 <div class="ag-timeline-card_info">
                   <div class="ag-timeline-card_title">Vérification de l'étanchéité</div>
@@ -51,7 +52,9 @@
               <div class="ag-timeline-card_inner">
                 <div class="ag-timeline-card_img-box">
                   <!-- Votre image ici -->
-                  <%= image_tag("filtre-climatisation-transformed.jpeg",class:"ag-timeline-card_img", size: "640x360", alt: "filtre climatisation") %>
+                  <%# <%= image_tag("filtre-climatisation-transformed.jpeg",class:"ag-timeline-card_img", size: "640x360", alt: "filtre climatisation") %>
+                  <img src="<%= asset_path('filtre-climatisation-transformed.jpeg') %>" class="ag-timeline-card_img" alt="filtre climatisation" width="640" height="360">
+
                 </div>
                 <div class="ag-timeline-card_info">
                   <div class="ag-timeline-card_title">Contrôle des filtres</div>
@@ -78,7 +81,8 @@
               <div class="ag-timeline-card_inner">
                 <div class="ag-timeline-card_img-box">
                   <!-- Votre image ici -->
-                  <%= image_tag("verification-clim-transformed.jpeg",class:"ag-timeline-card_img", size: "640x360", alt: "vérification climatiseur") %>
+                  <%# <%= image_tag("verification-clim-transformed.jpeg",class:"ag-timeline-card_img", size: "640x360", alt: "vérification climatiseur") %>
+                  <img src="<%= asset_path('verification-clim-transformed.jpeg') %>" class="ag-timeline-card_img" alt="vérification climatiseur" width="640" height="360">
                 </div>
                 <div class="ag-timeline-card_info">
                   <div class="ag-timeline-card_title">Vérification climatiseur</div>
