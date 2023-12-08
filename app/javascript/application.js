@@ -25,3 +25,10 @@ document.addEventListener("turbo:load", function() {
   console.log('connection timeline')
   initJetTimeline();
 });
+
+
+import { initAccordion } from "./controllers/accordion";
+document.addEventListener("turbo:load", function() {
+  console.log('connection accordion')
+  initAccordion();
+});
