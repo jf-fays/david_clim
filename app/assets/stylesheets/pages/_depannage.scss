@@ -1,0 +1,119 @@
+.emergency-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(236, 237, 243);
+  padding: 18px;
+
+  p{
+    margin: 0;
+    color: rgba( 24, 55, 59, 100%);
+    font-weight: 600;
+  }
+
+  i{
+    font-size: 1.3rem;
+    padding: 0 44px;
+    color: rgba( 24, 55, 59, 100%);
+
+  }
+}
+
+// .arrow {
+//   // position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   transform: rotate(270deg);
+//   cursor: pointer;
+// }
+
+// .arrow span {
+//   display: block;
+//   width: 1.5vw;
+//   height: 1.5vw;
+//   border-bottom: 5px solid blue;
+//   border-right: 5px solid blue;
+//   transform: rotate(45deg);
+//   margin: -10px;
+//   animation: animate 3s infinite;
+// }
+
+// .arrow span:nth-child(2) {
+//   animation-delay: -0.3s;
+// }
+
+// .arrow span:nth-child(3) {
+//   animation-delay: -0.5s;
+// }
+
+// @keyframes animate {
+//   0% {
+//       opacity: 0;
+//       transform: rotate(45deg) translate(-20px, -20px);
+//   }
+//   50% {
+//       opacity: 1;
+//   }
+//   100% {
+//       opacity: 0;
+//       transform: rotate(45deg) translate(20px, 20px);
+//   }
+// }
+
+.depannage-content{
+  padding-top: 80px;
+}
+
+.sectiontext{
+  display: flex;
+}
+
+.depannage-content .depannage-text h3{
+  color: rgba( 37, 118, 205, 100%);
+  font-weight: 600;
+  // line-height: 1.6rem;
+  margin-bottom: 24px;
+}
+
+.depannage-content .depannage-text h4{
+  color: rgba( 37, 118, 205, 100%);
+  font-weight: 500;
+  font-size: 1.3rem;
+  // line-height: 1.6rem;
+  margin: 40px 0 12px 0;
+}
+
+.depannage-content .depannage-text p{
+  color: rgba( 24, 55, 59, 100%);
+  line-height: 1.6rem;
+}
+
+.depannage-content .depannage-text ul > li{
+  color: rgba( 24, 55, 59, 100%);
+  line-height: 1.6rem;
+  list-style: none;
+  padding-bottom: 4px;
+
+  i{
+    padding-right: 12px;
+  }
+}
+
+.depannage-content .box-one .depannage-img1{
+  width: 50%;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  padding-left: 20px;
+
+  // .img{
+  //   width: 650px;
+  //   height: 430px;
+  // }
+}
+
+.depannage-content .box-one .depannage-text{
+  width: 50%;
+  padding: 0 20px 60px 0;
+}
