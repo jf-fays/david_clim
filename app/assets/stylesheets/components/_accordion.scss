@@ -90,7 +90,7 @@ $defaultSeconds: 3s;
 	flex-grow: 4;
 }
 
-.home {
+.first-element {
 	// height: 100vh;
 	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('climatisation-murale.jpg');
 	background-size: cover;
@@ -165,29 +165,30 @@ $defaultSeconds: 3s;
 
 
 
-.about {
+.second-element {
 	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('climatisation-gainable.jpg');
 	background-size: cover;
 	// background-position: center center;
 	// background-attachment: fixed;
 }
 
-.work {
+.third-element {
 	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('climatisation-cassette.jpg');
 	background-size: cover;
 	// background-position: center center;
 	// background-attachment: fixed;
 }
-.contact {
+.fourth-element {
 	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('climatisation-console.jpg');
 	background-size: cover;
 	// background-position: center center;
 	// background-attachment: fixed;
 }
-.home,
-.about,
-.work,
-.contact {
+
+.first-element,
+.second-element,
+.third-element,
+.fourth-element {
   position: relative;
   overflow: hidden;
 
