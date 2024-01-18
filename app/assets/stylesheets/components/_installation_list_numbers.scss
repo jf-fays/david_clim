@@ -7,6 +7,9 @@
 
 .installation-list .installation-list-numbers{
   padding: 84px 0px;
+  @media screen and (max-width: 768px) {
+		padding: 42px 0px;
+	}
 }
 
 .installation-list .installation-list-numbers > p{
@@ -16,6 +19,10 @@
   margin-bottom: 40px;
   color: rgba( 24, 55, 59, 100%);
   line-height: 1.6rem;
+  @media screen and (max-width: 768px) {
+    font-size: 0.9rem;
+    padding: 0 24px;
+	}
 }
 
 
@@ -52,6 +59,10 @@
   line-height: 1;
   // color: rgba( 80, 156, 158, 100%);
   color: rgba( 37, 118, 205, 100%);
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+	}
+
 }
 
 span.separator {

@@ -3,31 +3,54 @@
   // margin-right: 5%;
   padding-top: 72px;
   padding-bottom: 40px;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    padding-top: 50px;
+	}
 
   h1{
     font-weight: bold;
     font-size: 1.9rem;
     color: #459bda;
     margin-bottom: 3%;
+    @media screen and (max-width: 768px) {
+      font-size: 1.4rem;
+      margin-bottom: 6%;
+    }
   }
 
   p{
     font-size: 0.95rem;
     line-height: 1.6rem;
+    @media screen and (max-width: 768px) {
+      font-size: 0.9rem;
+
+    }
   }
 }
 
 .introduction-choice{
+  display: -webkit-flex; /* Safari */
   display: flex;
+  @media screen and (max-width: 768px) {
+		flex-direction: column;
+    margin-bottom: 8px;
+	}
 }
 
 .choice-list-title{
   width: 40%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+	}
 
   h2 {
     font-size: 1.5rem;
     font-weight: bold;
     color: rgba( 24, 55, 59, 100%);
+    @media screen and (max-width: 768px) {
+      font-size: 1.3rem;
+    }
   }
 
   p{
@@ -39,15 +62,25 @@
 .choice-list-ul {
   width: 60%;
   padding-left: 72px;
+  display: -webkit-flex; /* Safari */
   display: flex;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 0 8px;
+    font-size: 0.8rem;
+  }
 
   .choice-list-1, .choice-list-2{
     width: 50%;
+
   }
 }
 .introduction-choice > .choice-list-ul > .choice-list-1 > ul{
   list-style: none;
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
 
   li{
     padding-bottom: 8px;
@@ -56,12 +89,18 @@
     i{
       padding-right: 12px;
       color: rgba( 61, 115, 199, 100%);
+      @media screen and (max-width: 768px) {
+        padding-right: 8px;
+      }
     }
   }
 }
 
 .introduction-choice > .choice-list-ul > .choice-list-2 > ul{
   list-style: none;
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
 
   li{
     padding-bottom: 8px;
@@ -70,6 +109,9 @@
     i{
       padding-right: 12px;
       color: rgba( 61, 115, 199, 100%);
+      @media screen and (max-width: 768px) {
+        padding-right: 8px;
+      }
     }
   }
 }
