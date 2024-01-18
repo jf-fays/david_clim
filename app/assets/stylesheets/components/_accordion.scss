@@ -30,6 +30,7 @@ $defaultSeconds: 3s;
 	transition: all 500ms ease;
 	@media screen and (max-width: 768px) {
 		transform: rotate(0deg) !important;
+    font-size: 0.8rem;
 	}
 }
 .flex-about {
@@ -54,6 +55,7 @@ $defaultSeconds: 3s;
 	@media screen and (max-width: 768px) {
 		padding: 0%;
 		border: 0px solid #f1f1f1;
+    top: 15%;
 	}
 }
 
@@ -81,13 +83,13 @@ $defaultSeconds: 3s;
   // text-shadow: 1px 1px 2px black;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 	@media screen and (max-width: 768px) {
-		font-size: 0.9rem;
+		font-size: 0.8rem;
 	}
 }
 
 .flex-slide:hover {
 	-webkit-flex-grow: 4;
-	flex-grow: 4;
+	flex-grow: 6;
 }
 
 .first-element {
