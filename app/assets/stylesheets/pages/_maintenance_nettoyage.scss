@@ -25,6 +25,14 @@
   width: 60%;
   left: 40%;
 
+  @media screen and (max-width: 768px) {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)),url(nettoyage-clim-haute-pression.jpeg);
+		background-size: 400px 520px;
+    background-repeat: no-repeat;
+    width: 100%;
+    left: 10%;
+	}
+
   .container {
     // width: fit-content;
     // text-align: center;
@@ -32,6 +40,12 @@
     top: 50%;
     left: 4%;
     transform: translate(-50%,-50%);
+
+    @media screen and (max-width: 768px) {
+      top: 0;
+      left: 0;
+      transform: translate(0,0);
+    }
   }
 
   .text-cleaning {
@@ -46,6 +60,10 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 2.5rem;
   font-weight: bold;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.6rem;
+  }
 }
 
 .cleaning-section .text-cleaning span {
