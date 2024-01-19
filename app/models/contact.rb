@@ -4,7 +4,7 @@ class Contact < MailForm::Base
   attribute :phone_number, validate: true, length: { minimum: 10 }
   attribute :city, validate: true
   attribute :email, validate: /\A[^@\s]+@[^@\s]+\z/i
-  attribute :message, validate: true, length: { minimum: 10 }
+  attribute :message, validate: true, length: { minimum: 2 }
   attribute :nickname, captcha: true
 
   def headers

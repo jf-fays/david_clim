@@ -27,6 +27,7 @@
         height: 300px;
         text-align: center;
         align-items: center;
+        justify-content: center;
       }
   }
 
@@ -49,6 +50,8 @@
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     @media screen and (min-width: 769px) {
     display: none;
+    padding: 20px;
+    margin: 0;
     }
   }
   // .banner img {
@@ -132,10 +135,9 @@
   .medal {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    place-items: center;
+    justify-items: center;
     height: 100%;
+
     @media screen and (max-width: 768px) {
       grid-template-columns: 1fr 1fr 1fr;
     }

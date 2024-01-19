@@ -5,6 +5,16 @@
   background-color: rgb(236, 237, 243);
   padding: 18px;
 
+  @media screen and (max-width: 768px) {
+		display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    // align-items: center;
+    text-align: center;
+    grid-gap: 8%;
+    height: 180px;
+	}
+
   p{
     margin: 0;
     color: rgba( 24, 55, 59, 100%);
@@ -15,7 +25,18 @@
     font-size: 1.3rem;
     padding: 0 44px;
     color: rgba( 24, 55, 59, 100%);
+  }
+  .down {
+    display: none;
+  }
 
+  @media screen and (max-width: 768px) {
+    .right {
+      display: none;
+    }
+    .down {
+      display: flex;
+    }
   }
 }
 
@@ -63,10 +84,20 @@
 
 .depannage-content{
   padding-top: 80px;
+
+  @media screen and (max-width: 768px) {
+		padding-top: 40px;
+	}
 }
 
 .sectiontext{
   display: flex;
+
+  @media screen and (max-width: 768px) {
+		display: grid;
+    grid-template-columns: 1fr;
+	}
+
 }
 
 .depannage-content .depannage-text h3{
@@ -87,6 +118,10 @@
 .depannage-content .depannage-text p{
   color: rgba( 24, 55, 59, 100%);
   line-height: 1.6rem;
+
+  @media screen and (max-width: 768px) {
+		font-size: 0.9rem
+	}
 }
 
 .depannage-content .depannage-text ul > li{
@@ -98,6 +133,9 @@
   i{
     padding-right: 12px;
   }
+  @media screen and (max-width: 768px) {
+		font-size: 0.9rem
+	}
 }
 
 .depannage-content .box-one .depannage-img1{
@@ -107,6 +145,10 @@
   // align-items: center;
   padding-left: 20px;
 
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding-left: 0;
+	}
   // .img{
   //   width: 650px;
   //   height: 430px;
@@ -116,4 +158,8 @@
 .depannage-content .box-one .depannage-text{
   width: 50%;
   padding: 0 20px 60px 0;
+  @media screen and (max-width: 768px) {
+		width: 100%;
+    padding: 0;
+	}
 }
