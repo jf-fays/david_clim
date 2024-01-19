@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "start": "webpack --config webpack.config.js --mode production"
+    "start": "webpack --config webpack.config.js --env production"
   },
   "devDependencies": {
     "webpack-dev-server": "^4.15.1"
