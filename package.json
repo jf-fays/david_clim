@@ -12,10 +12,6 @@
     "webpack-cli": "^5.1.1"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "start": "webpack --config webpack.config.js --env production"
-  },
-  "devDependencies": {
-    "webpack-dev-server": "^4.15.1"
+    "build": "webpack --config webpack.config.js"
   }
 }
