@@ -96,6 +96,7 @@
       font-size: 0.95rem;
       border-left: none;
       padding-top: 32px;
+      padding-left: 0;
     }
   }
 
@@ -161,7 +162,7 @@
     }
   }
 
-  .block-quality .medal .location, .estimation, .car, .warranty, .maintenance, .sav {
+  .medal .location, .estimation, .car, .warranty, .service, .sav {
     display: flex;
     justify-content: flex-start;
     text-align: center;
@@ -172,7 +173,7 @@
 
     @media screen and (max-width: 768px) {
       height: fit-content;
-      width: 120px;
+      width: 114px;
     }
   }
 // }
