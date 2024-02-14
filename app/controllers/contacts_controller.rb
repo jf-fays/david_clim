@@ -8,14 +8,25 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contacts_params)
     @contact.request = request
     if @contact.deliver
-      redirect_to new_contact_path, notice: "Message envoyé!"
-      # flash[:message] = "Message envoyé!"
+      redirect_to new_contact_path
+      # notice: "Message envoyé!"
     else
-      # flash.now[:error] = "Impossible d'envoyer le message, veuillez remplir tous les champs requis!"
-      redirect_to new_contact_path, notice: "Impossible d'envoyer le message, veuillez remplir tous les champs requis!"
-      # render :new, status: :unprocessable_entity
+      # flash.now[:alert] = "Impossible d'envoyer le message, veuillez remplir tous les champs requis!"
+      render :new, status: :unprocessable_entity
     end
   end
+
+  # def create
+  #   @contact = Contact.new(contacts_params)
+  #   @contact.request = request
+  #   respond_to do |format|
+  #     if @contact.deliver
+  #       format.json { render json: { success: true } }
+  #     else
+  #       format.json { render json: { errors: @contact.errors.full_messages }, status: :unprocessable_entity }
+  #     end
+  #   end
+  # end
 
   private
 

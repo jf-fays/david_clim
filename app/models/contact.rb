@@ -1,7 +1,7 @@
 class Contact < MailForm::Base
   # attribute :first_name, validate: true, length: { minimum: 2 }
   attribute :last_name, validate: true, length: { minimum: 2 }
-  attribute :phone_number, validate: true, length: { minimum: 10 }
+  attribute :phone_number, validate: /\A\+?[0-9]{1,15}\z/m
   attribute :city, validate: true
   attribute :email, validate: /\A[^@\s]+@[^@\s]+\z/i
   attribute :message, validate: true, length: { minimum: 2 }
