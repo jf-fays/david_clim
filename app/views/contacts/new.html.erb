@@ -1,4 +1,4 @@
-<div class="contact" id="contact">
+<div class="contact" >
     <div class="contact-banner">
         <div class="contact-banner-text">
             <h2>DAVID CLIM À FRÉJUS</h2>
@@ -30,50 +30,46 @@
                 <p><i class="fa-solid fa-envelope" style="color: #2576ce;"></i><span style="padding-left: 14px;">contact@davidclim.fr</span></p>
             <%# </div> %>
         </div>
-        <div class="contact-form">
+
+        <div class="contact-form" id="contact-formulaire">
             <%= simple_form_for @contact do |form| %>
 
-                <% if @contact.errors.any? %>
-                    <div id="error_explanation" class="bg-rose-200 pt-3 pb-1 mb-4 px-4 rounded-md">
-                        <div class="font-bold text-rose-700 text-sm pb-4"><%= pluralize(@contact.errors.count, "error") %> prohibited this page from being saved:</div>
+            <% flash.each do |type, msg| %>
+              <div class="alert alert-info">
+                <%= msg %>
+              </div>
+            <% end %>
 
-                        <ul class="pb-0 mb-0">
-                            <% @contact.errors.each do |error| %>
-                                <li class="text-rose-600 pl-4 text-sm"><%= error.full_message %></li>
-                            <% end %>
-                        </ul>
-                    </div>
-                <% end %>
 
 
                 <div class="field">
                     <div class="field_contact1">
                       <div class="field_last_name">
                         <%# <%= form.label :"Nom *" %>
-                        <%= form.text_field :last_name, placeholder: 'Nom' %>
+                        <%= form.text_field :last_name, placeholder: 'Nom', id:"contact_last_name" %>
                       </div>
 
                       <div class="field_email">
                           <%# <%= form.label :"email *" %>
-                          <%= form.email_field :email, placeholder: 'Adresse e-mail'%>
+                          <%= form.email_field :email, placeholder: 'Adresse e-mail', id:"contact_email"%>
                       </div>
                     </div>
 
                     <div class="field_contact2">
                       <div class="field_phone_number">
                           <%# <%= form.label :"Téléphone *" %>
-                          <%= form.text_field :phone_number, placeholder: 'N° de téléphone' %>
+                          <%= form.text_field :phone_number, placeholder: 'N° de téléphone', id:"contact_phone_number" %>
                       </div>
 
                       <div class="field_city">
                           <%# <%= form.label :"Ville *" %>
-                          <%= form.text_field :city, placeholder: 'Ville' %>
+                          <%= form.text_field :city, placeholder: 'Ville', id:"contact_city"%>
                       </div>
                     </div>
 
                     <div class="field_content" >
                         <%# <%= form.label :"Rédigez votre message ici *" %>
-                        <%= form.text_area :message, placeholder: 'Rédigez votre message ici', rows: "6" %>
+                        <%= form.text_area :message, placeholder: 'Rédigez votre message ici', rows: "6", id:"contact_message" %>
                     </div>
 
                     <div class="hidden d-none">
@@ -83,11 +79,79 @@
 
                     <div class="actions flex justify-end">
                         <p><em>Tous les champs sont obligatoires.</em></p>
-                        <%=form.submit "Envoyer  → ", class: "btn-contact" %>
+                        <%=form.submit "Envoyer  → ", class: "btn-contact"%>
                     </div>
                 </div>
             <% end %>
         </div>
+
       </div>
 
 </div>
+<script>
+  let form = document.getElementById('contact-formulaire')
+  form.addEventListener('submit', (e) => {
+    e.preventDefault()
+
+    let name = document.getElementById('contact_last_name').value
+    let email = document.getElementById('contact_email').value
+    let telephone = document.getElementById('contact_phone_number').value
+    let ville = document.getElementById('contact_city').value
+    let message = document.getElementById('contact_message').value
+
+    let errors = []
+
+    if (name.trim() === ""){
+      errors.push("Entrez votre Nom")
+    }
+    if (email.trim() === ""){
+      errors.push("Entrez votre e-mail")
+    } else if (!isValidEmail(email)){
+      errors.push("Veuillez entrer un email valide")
+    }
+
+
+    if (telephone.trim() === ""){
+      errors.push("Entrez votre Téléphone")
+    } else if (!isValidPhoneNumber(telephone)){
+      errors.push("Veuillez entrer un numéro de téléphone valide")
+    }
+
+    if (ville.trim() === ""){
+      errors.push("Entrez votre Ville")
+    }
+    if (message.trim() === ""){
+      errors.push("Entrez votre Message")
+    }
+
+    if (errors.length > 0) {
+      let errorMessage = '';
+      errors.forEach((error) => {
+          errorMessage += `${error}<br>`; // Ajouter <br> pour les sauts de ligne
+      });
+
+      Swal.fire({
+          icon: 'error',
+          title: 'Veuillez remplir les champs manquants',
+          html: errorMessage
+      });
+      return false;
+    }
+
+    Swal.fire({
+      icon: 'success',
+      title: 'Message envoyé',
+      text: "Merci de nous avoir contacté"
+    })
+  });
+
+  function isValidEmail(email) {
+    const emailRegex = /^\S+@\S+\.\S+$/;
+    return emailRegex.test(email);
+  }
+
+  function isValidPhoneNumber(telephone) {
+    const phoneRegex = /^\+?[0-9]{1,15}$/;
+    return phoneRegex.test(telephone);
+  }
+</script>
