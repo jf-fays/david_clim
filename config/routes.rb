@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   # get "contact", to: "pages#contact_form"
   get "installation-climatisation", to: "pages#installation"
-  get "maintenance-nettoyage-climatisation", to: "pages#maintenance_nettoyage"
+  get "maintenance-entretien-climatisation", to: "pages#maintenance_entretien"
   get "depannage-climatisation", to: "pages#depannage"
   get "climatisation-reversible-pompe-a-chaleur", to: "pages#clim_pompe_a_chaleur"
   get "realisation-climatisation", to: "pages#realisation"
