@@ -2,7 +2,8 @@
     <div class="container-fluid">
         <div class="info-contact">
             <%= link_to root_path, class: "navbar-brand" do %>
-            <%= image_tag "logo_name.png" %>
+            <%= image_tag "logo_name.png", alt:"David Clim Fréjus Saint-Raphael Installation Entretien Dépannage Maintenance Climatisation Logo Salutis agence" %>
+            <span class="sr-only">Accueil</span> <!-- Texte masqué pour les lecteurs d'écran -->
             <% end %>
             <div class="info">
                 <div class="phone-number">
@@ -16,7 +17,7 @@
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <%# <span class="navbar-toggler-icon"></span> %>
-            <input class="checkbox" type="checkbox" name="" id="" />
+            <input class="checkbox" type="checkbox" name="menuitems" id="menu-items" />
             <div class="hamburger-lines">
               <span class="line line1"></span>
               <span class="line line2"></span>
@@ -33,7 +34,7 @@
                     <%= link_to "Installation", installation_climatisation_path, class: "nav-link" %>
                 </li>
                 <li class="nav-item">
-                    <%= link_to "Maintenance <br /> & Nettoyage".html_safe, maintenance_nettoyage_climatisation_path, class: "nav-link" %>
+                    <%= link_to "Maintenance <br /> & Entretien".html_safe, maintenance_entretien_climatisation_path, class: "nav-link" %>
                 </li>
                 <li class="nav-item">
                     <%= link_to "Dépannage".html_safe, depannage_climatisation_path, class: "nav-link" %>
