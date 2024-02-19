@@ -3,8 +3,14 @@ export const initNavbar = () => {
   $(window).scroll(function() {
     if ($(window).scrollTop() > 68) {
       $('#navbarSupportedContent').addClass('stuck');
+      $('#navbarSupportedContentHome').addClass('stuck');
+      $('#navbarSupportedContentHome').removeClass('navbar-transparent');
+      $('#navbarSupportedContentHome').removeClass('navbar-nav-transparent');
     } else {
       $('#navbarSupportedContent').removeClass('stuck');
+      $('#navbarSupportedContentHome').removeClass('stuck');
+      $('#navbarSupportedContentHome').addClass('navbar-transparent');
+      $('#navbarSupportedContentHome').addClass('navbar-nav-transparent');
     }
 
   });

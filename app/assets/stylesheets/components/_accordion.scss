@@ -38,7 +38,7 @@ $defaultSeconds: 3s;
 	color: #f1f1f1;
 	position: relative;
 	width: 80%;
-	font-size: 0.9rem;
+	// font-size: 0.9rem;
 	padding: 5%;
 	top: 20%;
 	border: 2px solid #f1f1f1;
@@ -78,10 +78,11 @@ $defaultSeconds: 3s;
 .flex-slide > .flex-about > p{
   color: white;
   font-family: 'Raleway', sans-serif;
-  line-height: 1.6rem;
+  line-height: 1.8rem;
   font-weight: 500;
   // text-shadow: 1px 1px 2px black;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 1rem;
 	@media screen and (max-width: 768px) {
 		font-size: 0.8rem;
 	}
@@ -201,7 +202,7 @@ $defaultSeconds: 3s;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); // Adjust the opacity as needed
+    background-color: rgba(0, 0, 0, 0.2); // Adjust the opacity as needed
     z-index: 1; // Ensure overlay is behind text
     transition: opacity 500ms ease;
     opacity: 0;

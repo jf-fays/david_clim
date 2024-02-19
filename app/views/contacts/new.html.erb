@@ -1,3 +1,5 @@
+<%= render "shared/navbar" %>
+
 <div class="contact" >
     <div class="contact-banner">
         <div class="contact-banner-text">
@@ -88,7 +90,7 @@
       </div>
 
 </div>
-<script>
+<%# <script>
   let form = document.getElementById('contact-formulaire')
   form.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -154,4 +156,4 @@
     const phoneRegex = /^\+?[0-9]{1,15}$/;
     return phoneRegex.test(telephone);
   }
-</script>
+</script> %>

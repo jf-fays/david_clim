@@ -40,6 +40,7 @@
   .navbar-lewagon .navbar-collapse .navbar-nav a{
     color: rgba( 24, 55, 59, 100%);
     padding: 8px;
+    text-align: center;
   }
 
   .navbar .container-fluid .navbar-toggler{
@@ -68,7 +69,7 @@
       width: 100%;
       border-radius: 10px;
       // background:  rgba( 24, 55, 59, 100%);
-      background: rgba(0,0,0,.55);;
+      background: rgba(0,0,0,.55);
     }
 
     .navbar .container-fluid .navbar-toggler .hamburger-lines .line1 {
@@ -236,5 +237,85 @@
     z-index:100;
     width:100%;
     top:0;
+  }
+}
+
+
+///////////////////////////////////////////////////////
+///////////// HOME PAGE TRANSPARENT ///////////////////
+///////////////////////////////////////////////////////
+
+@media screen and (max-width: 768px) {
+
+  .navbar-lewagon .info-contact .home-phone > p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    // color: rgba( 92, 153, 213, 100%);
+    // color: rgba( 69, 155, 218, 100%);
+    color: white;
+  }
+
+  .navbar .container-fluid .navbar-toggler .home-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    // background:  rgba( 24, 55, 59, 100%);
+    background:rgba(255, 255, 255, 0.775);
+  }
+
+  .navbar-lewagon .navbar-collapse .home-nav a{
+    color: white;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .home-navbar{
+    box-shadow: 0 0 0 transparent;
+    // background-color: rgba( 244, 245, 250, 100%);
+    padding: 12px 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+
+
+  .navbar-lewagon .navbar-collapse .navbar-nav-transparent a{
+    display: flex;
+    align-items: center;
+    color: white;
+    // font-family: Montserrat;
+    font-weight: 500;
+    padding: 8px 48px;
+    height: 100%;
+    border-bottom: solid 5px transparent;
+  }
+
+  .navbar-lewagon .navbar-collapse .navbar-nav-transparent a:hover{
+    // color:rgba( 37, 118, 205, 100%);
+    color: rgba( 240, 188, 69, 100%);
+  }
+
+
+  .navbar-lewagon .navbar-transparent {
+    width: 100%;
+    height: 68px;
+    // background-color: rgba( 69, 155, 218, 100%);
+    background-color: transparent;
+    // 0px 5px 20px 0px rgba(0,0,0,0.2)
+    text-align: center;
+    box-shadow: 1px 5px 15px 2px transparent;
+    -webkit-box-shadow: 1px 5px 15px 2px transparent;
+    -moz-box-shadow: 1px 5px 15px 2px transparent;
+  }
+
+  .navbar-lewagon .info-contact .home-phone > p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 26px;
+    // color: rgba( 92, 153, 213, 100%);
+    // color: rgba( 69, 155, 218, 100%);
+    color: white;
   }
 }
