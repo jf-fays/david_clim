@@ -14,7 +14,7 @@
   }
 
   .card_one, .card_four{
-    background-image: url(blue-gradient.gif);
+    background-image: url(blue-gradient.jpg);
     height: 400px;
     width: 100%;
     display: flex;
@@ -34,6 +34,30 @@
     color: white;
     line-height: 1.6rem;
     font-size: 0.9rem;
+  }
+
+  .card_four .img-homepage h2 {
+    color: white;
+  }
+  .card_four .text-homepage ul > li{
+    width: 100%;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    list-style: none;
+    padding-bottom: 16px;
+
+    p{
+      font-size: 1.3rem;
+    }
+  }
+
+  .card_four .text-homepage{
+    width: 80%;
+  }
+
+
+  .card_four .text-homepage ul > li > p{
+    padding-left: 28px;
   }
 
   .card_two img, .card_three img{

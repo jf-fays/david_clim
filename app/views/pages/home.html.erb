@@ -1,11 +1,75 @@
 <div class="banner" >
+  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon bg-transparent home-navbar">
+    <div class="container-fluid">
+        <div class="info-contact">
+            <%= link_to root_path, class: "navbar-brand" do %>
+            <%= image_tag "logo_name.png", alt:"David Clim Fréjus Saint-Raphael Installation Entretien Dépannage Maintenance Climatisation Logo Salutis agence" %>
+            <span class="sr-only">Accueil</span> <!-- Texte masqué pour les lecteurs d'écran -->
+            <% end %>
+            <div class="info">
+                <div class="phone-number home-phone">
+                    <p>06 11 96 44 86</p>
+                </div>
+                <div class="quotes">
+                    <%= link_to "Demandez un devis", new_contact_path, class: "nav-link" %>
+                </div>
+            </div>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContentHome" aria-controls="navbarSupportedContentHome" aria-expanded="false" aria-label="Toggle navigation">
+            <%# <span class="navbar-toggler-icon"></span> %>
+            <input class="checkbox" type="checkbox" name="menuitems" id="menu-items" />
+            <div class="hamburger-lines home-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+        </button>
+
+        <div class="collapse navbar-collapse navbar-transparent" id="navbarSupportedContentHome">
+            <ul class="navbar-nav home-nav navbar-nav-transparent me-auto">
+                <li class="nav-item active">
+                    <%= link_to "Accueil", root_path, class: "nav-link" %>
+                </li>
+                <li class="nav-item active">
+                    <%= link_to "Installation", installation_climatisation_path, class: "nav-link" %>
+                </li>
+                <li class="nav-item">
+                    <%= link_to "Maintenance <br /> & Entretien".html_safe, maintenance_entretien_climatisation_path, class: "nav-link" %>
+                </li>
+                <li class="nav-item">
+                    <%= link_to "Dépannage".html_safe, depannage_climatisation_path, class: "nav-link" %>
+                </li>
+                <%# <li class="nav-item">
+                    <%= link_to "Climatisation réversible <br />/ Pompe à chaleur".html_safe, climatisation_reversible_pompe_a_chaleur_path, class: "nav-link" %>
+                <%# </li> %>
+                <li class="nav-item">
+                    <%= link_to "Réalisations", realisation_climatisation_path, class: "nav-link" %>
+                </li>
+                <li class="nav-item">
+                    <%= link_to "Contact", new_contact_path, class: "nav-link" %>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+  <div class="banner-text">
     <%# <%= image_tag "salon-clim.jpg" %>
-    <h2>DAVID CLIM <br> Spécialiste de la Climatisation</h2>
+    <h2>DAVID CLIM</h2>
+    <h2>Spécialiste de la Climatisation</h2>
+    <p>_______</p>
+    <p>À Fréjus, Saint-Raphaël et ses environs</p>
+  </div>
 </div>
 
 <div class="title-homepage">
-    <h2>DAVID CLIM : Spécialiste de la Climatisation dans la Région de Fréjus et Saint-Raphaël</h2>
-    <p>Découvrez <strong>David Clim</strong>, votre expert en climatisation à Fréjus / Saint-Raphaël et ses environs. Notre équipe est composée de <strong>frigoristes qualifiés et diplômés d'État</strong>, prêts à répondre aux besoins des particuliers et des professionnels. Que ce soit pour <strong>l'installation, la maintenance, le nettoyage ou le dépannage</strong> de votre système de climatisation, David Clim est là pour vous servir, offrant des solutions fiables et efficaces.</p>
+    <p>NOTRE EXPERTISE</p>
+    <h3>CHEZ DAVID CLIM, UN PROJET, UN INTERLOCUTEUR : SIMPLIFIEZ VOS PROJETS DE CLIMATISATION AVEC NOTRE EXPERTISE SPÉCIALISÉE.</h3>
+    <h3>DÉCOUVREZ <span style="color: #ad8f60;">LES DIFFÉRENTS TYPES DE SERVICES QUE NOUS PROPOSONS</span>, EXÉCUTÉS PAR NOTRE ÉQUIPE DE FRIGORISTES QUALIFIÉS ET DIPLÔMÉS D'ÉTAT, POUR RÉPONDRE AUX BESOINS DES PARTICULIERS ET DES PROFESSIONNELS.</h3>
+    <%# <h2>DAVID CLIM : Spécialiste de la Climatisation dans la Région de Fréjus et Saint-Raphaël</h2> %>
+    <%# <p>David Clim : votre partenaire de confiance en climatisation à Fréjus/Saint-Raphaël et ses environs. Notre équipe de frigoristes qualifiés et diplômés d'État est là pour répondre à vos besoins. Avec notre expérience solide, nous assurons des services d'installation, d'entretien, de nettoyage et de dépannage, adaptés tant aux particuliers qu'aux professionnels.</p> %>
+    <%# <p>Découvrez <strong>David Clim</strong>, votre expert en climatisation à Fréjus / Saint-Raphaël et ses environs. Notre équipe est composée de <strong>frigoristes qualifiés et diplômés d'État</strong>, prêts à répondre aux besoins des particuliers et des professionnels. Que ce soit pour <strong>l'installation, la maintenance, le nettoyage ou le dépannage</strong> de votre système de climatisation, David Clim est là pour vous servir, offrant des solutions fiables et efficaces.</p> %>
     <%# <p><strong>David Clim</strong> est une entreprise spécialisée dans la climatisation. Notre équipe de <strong>frigoristes diplômés d’État</strong> intervient auprès des particuliers comme des professionnels basés sur Fréjus / Saint-Raphaël et ses alentours. Qu’il s’agisse de <strong>l’installation, de la maintenance, du nettoyage ou du dépannage de votre climatisation</strong>, David Clim est apte à intervenir chez vous.</p> %>
 </div>
 
@@ -29,12 +93,29 @@
         </div>
         <div class="card_four">
             <div class="img-homepage">
-                <%= image_tag "air-conditioner-white.png", alt:"Unité intérieure climatisation logo" %>
+                <h2>Avantages de la Climatisation</h2>
+                <%# <%= image_tag "air-conditioner-white.png", alt:"Unité intérieure climatisation logo" %>
             </div>
-            <div class="text-homepage">
-                <p>Lors de cette première rencontre, nous établissont une étude sur la concrétisation de votre projet de climatisation. Ainsi, vous restez maître de vos envies, tout en ayant une analyse climatique professionnelle sur laquelle vous appuyer.</p>
-                <p>De cette manière, nous garantissons un environnement à faible consommation d'énergie grâce à DAVID CLIM, pour une atmosphère intérieure idéale !</p>
-            </div>
+            <%# <div class="list-avantages"> %>
+                <%# <div class="icon-text"> %>
+                    <%# <%= image_tag "temperature-control.png", alt:"Unité extérieure moteur climatisation david-clim", size:"70x70" %>
+
+                <%# </div> %>
+                <div class="text-homepage ">
+                  <ul>
+                <li><i class="fa-solid fa-house fa-2xl" style="color: white;"></i><p>Confort</p></li>
+                <li><i class="fa-solid fa-coins fa-2xl" style="color: white;"></i><p>Économie d'énergie</p></li>
+                <li><i class="fa-solid fa-wind fa-2xl" style="color: white;"></i><p>Qualité d'air amélioré</p></li>
+                <li><i class="fa-solid fa-droplet fa-2xl" style="color: white;"></i><p>Contrôle de l'humidité</p></li>
+            </ul>
+                  <%# <i class="fa-solid fa-house"></i><p>Confort</p> %>
+                  <%# <p>Économie d'énergie</p>
+                  <p>Qualité d'air amélioré</p>
+                  <p>Contrôle de l'humidité</p> %>
+                    <%# <p>Lors de cette première rencontre, nous établissont une étude sur la concrétisation de votre projet de climatisation. Ainsi, vous restez maître de vos envies, tout en ayant une analyse climatique professionnelle sur laquelle vous appuyer.</p> %>
+                    <%# <p>De cette manière, nous garantissons un environnement à faible consommation d'énergie grâce à DAVID CLIM, pour une atmosphère intérieure idéale !</p> %>
+                </div>
+            <%# </div> %>
         </div>
     </div>
 </div>
