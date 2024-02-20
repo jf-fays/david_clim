@@ -3,19 +3,35 @@
 //=====================================================//
 
 @media screen and (min-width: 350px){
-  .card-homepage{
-    margin-top: 35px;
-    // box-shadow: 0 0 15px rgba(211, 209, 209, 0.82);
-  }
 
   .box_one{
+    margin-top: 35px;
+    background-image: linear-gradient(to left bottom, #ffffff 50%, #e4e9fb, #bcd6f7, #85c6ef, #2576cd0c);
     display: grid;
     grid-template-columns: 1fr;
+    padding: 30px;
   }
 
-  .card_one, .card_four{
-    background-image: url(blue-gradient.jpg);
-    height: 400px;
+  .card_one {
+    height: 448px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction:column;
+    margin: auto;
+    padding: 0 20px;
+  }
+
+  .card_one p {
+    color: rgba( 24, 55, 59, 100%);
+    line-height: 1.6rem;
+    font-size: 0.9rem;
+    font-family: Poppins, sans-serif;
+  }
+
+  .card_four{
+    height: 620px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -23,41 +39,51 @@
     align-items: center;
     flex-direction:column;
     margin: auto;
-    padding: 0 12px;
+    padding: 0 20px;
   }
 
-  .card_one h3, .card_four h3{
-    padding-top: 12px;
+  .card_four .list-advantages h2 {
+    color: #ad8f60;
+    font-family: Poppins, sans-serif;
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 1.2em;
+    margin: 20px 0;
+    font-weight: 600;
   }
 
-  .card_one p , .card_four p{
-    color: white;
-    line-height: 1.6rem;
-    font-size: 0.9rem;
+  .card_four .list-advantages ul{
+    padding-left: 0;
   }
 
-  .card_four .img-homepage h2 {
-    color: white;
-  }
-  .card_four .text-homepage ul > li{
-    width: 100%;
-    display: -webkit-flex; /* Safari */
+  .card_four .list-advantages li{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    list-style: none;
-    padding-bottom: 16px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .card_four .list-advantages li h4{
+    line-height: 1.3em;
+    font-size: 1.125em;
+    font-weight: 600;
+    color: rgba( 92, 153, 213, 100%);
+    font-family: Poppins, sans-serif;
+  }
+
+  .card_four .list-advantages-desc{
+    padding-bottom: 8px;
+    text-align: left;
 
     p{
-      font-size: 1.3rem;
+      color: rgba( 24, 55, 59, 100%);
+      font-size: 0.9rem;
+      line-height: 1.4em;
+      margin-bottom: 0;
+      padding-bottom: 8px;
     }
-  }
-
-  .card_four .text-homepage{
-    width: 80%;
-  }
-
-
-  .card_four .text-homepage ul > li > p{
-    padding-left: 28px;
   }
 
   .card_two img, .card_three img{
@@ -65,38 +91,18 @@
     background-size: cover;
     width: 100%;
     height: 250px;
+    box-shadow: 0px 12px 34px -20px rgba( 37, 118, 205, 100%);
+    margin-bottom: 16px;
   }
-
-  // .card_four{
-  //   background-image: url(blue-gradient.gif);
-  //   height: 524px;
-  //   width: 100%;
-  //   display: flex;
-  //   justify-content: center;
-  //   text-align: center;
-  //   align-items: center;
-  //   flex-direction:column;
-  //   margin: auto;
-  //   padding: 0 12px;
-  // }
-
-  // .card_four h3{
-  //   padding-top: 12px;
-  // }
 }
 
-.card_four .img-homepage , .card_one .img-homepage{
-  padding-bottom: 20px;
-}
+
 
 //=====================================================//
 //=================== tablet style ===================//
 //=====================================================//
 
 @media screen and (min-width: 750px) {
-  .card-homepage{
-    margin: 0;
-  }
 
   .box_one{
   grid-template-columns: 1fr 1fr;
@@ -119,15 +125,6 @@
     height: 350px;
     width: 100%;
   }
-
-  // .card_four{
-  //   height: 350px;
-  //   font-size: 0.75rem;
-  // }
-
-  // .card_four .img-homepage{
-  //   padding-bottom: 38px;
-  // }
 }
 
 //=====================================================//
@@ -142,7 +139,7 @@
 
   .card_one , .card_four{
     padding: 0 80px;
-    height: 450px;
+    height: 500px;
     font-size: 1rem;
   }
 
@@ -155,11 +152,9 @@
     width: 100%;
   }
 
-  // .card_four{
-  //   height: 450px;
-  //   padding: 0 80px;
-  //   font-size: 1rem;
-  // }
+  .card_four .img-homepage , .card_one .img-homepage{
+    padding-bottom: 20px;
+  }
 
   .card_four h4{
     font-size: 40px;

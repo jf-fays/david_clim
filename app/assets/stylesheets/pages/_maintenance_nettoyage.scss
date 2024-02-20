@@ -2,6 +2,10 @@
   background: radial-gradient(circle at top, #ffffff , #F3F5F6);
   padding-bottom: 1px;
   padding-top: 90px;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 45px;
+	}
 }
 
 .cleaning-box{
@@ -78,4 +82,27 @@
   padding-top: 20px;
   // font-size: 32px;
   // font-weight: bold;
+}
+
+.obligation {
+  margin: 40px 80px 64px 40px;
+
+  p{
+    margin: 0;
+    padding: 22px;
+    background-color: #e19300;
+    color: white;
+    border-radius: 16px;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 16px 28px 32px 16px;
+
+    p{
+      font-size: 0.85rem;
+      text-align: left;
+    }
+  }
 }
