@@ -1,14 +1,4 @@
-// Specific CSS for your home-page
-// Specific CSS for your home-page
-//=====================================================//
-//=================== tablet style ===================//
-//=====================================================//
-
-// @media screen and (min-width: 750px) {
   .banner{
-    // background-image: linear-gradient(90deg, #1D1F31 20%, #1D1F3126 100%), url(salon-clim3.jpg);
-    // background-image: linear-gradient(90deg, #242745c6 20%, #1d224826 100%), url(salon-clim3.jpg);
-    // background-image: linear-gradient(90deg, #242846fe 18%, #1d224826 100%), url(salon-clim3.jpg);
     background-image:linear-gradient(310deg,(rgba(0,0,0,0.1) 34% ,rgba(0,0,0,0.7)100%)), url(salon-clim3.jpg);
 
     background-position: center;
@@ -16,15 +6,11 @@
     justify-content: center;
     display: flex;
     height: 750px;
-    // width: 100%;
     display: flex;
     flex-direction: column;
     @media screen and (max-width: 768px) {
       background-image:linear-gradient(310deg,(rgba(0,0,0,0.1) 34% ,rgba(0,0,0,0.7)100%)), url(salon-clim3.jpg);
-      height: 480px;
-      // text-align: center;
-      // align-items: center;
-      // justify-content: center;
+      height: 532px;
     }
   }
 
@@ -44,19 +30,6 @@
       padding: 10px;
     }
   }
-  // .banner::before {
-  //   content: "";
-  //   background-image: url(salon-clim.jpg);
-  //   background-size: cover;
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   position: absolute;
-  //   top: 0px;
-  //   right: 0px;
-  //   bottom: 0px;
-  //   left: 0px;
-  //   opacity: 0.85;
-  // }
 
   .banner .banner-text h2 {
     font-family: 'DM Sans',sans-serif;
@@ -66,7 +39,7 @@
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     @media screen and (max-width: 769px) {
     // display: none;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     padding: 0 0 8px 0px;
     margin: 0;
     }
@@ -74,23 +47,17 @@
 
   .banner .banner-text p {
     font-family: 'DM Sans',sans-serif;
-    font-size: 24px;
+    font-size: 28px;
     color: white;
     padding: 0px;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     @media screen and (max-width: 769px) {
-    // display: none;
     font-size: 1rem;
     padding: 0px;
     margin: 0;
     padding-top: 8px;
     }
   }
-  // .banner img {
-  //   position: relative;
-  //   height: 80px;
-  //   margin: 28px 48px;
-  // }
 
   .title-homepage {
     background-color: white;
@@ -142,9 +109,7 @@
 
     @media screen and (max-width: 768px) {
       font-size: 0.95rem;
-      // border-left: none;
       border-left: 3px solid #459bda;
-      // padding-top: 32px;
       padding-left: 8px;
     }
   }
@@ -154,8 +119,6 @@
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    // position: absolute;
     width: 100%;
     padding: 12px 0px;
   }
@@ -174,7 +137,6 @@
   }
 
   .text-quality h2 {
-    // color: #dd2935;
     color: #bd2832;
 
     font-weight: bold;
@@ -228,4 +190,3 @@
       width: 114px;
     }
   }
-// }
