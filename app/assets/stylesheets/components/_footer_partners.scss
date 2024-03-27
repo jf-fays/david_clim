@@ -4,7 +4,7 @@
   background-color: rgba( 231, 237, 245, 100%);
   // position: absolute;
   width: 100%;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
 		padding: 24px 20px;
 	}
 }
@@ -18,7 +18,7 @@
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 0px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1023px) {
 		display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
@@ -30,8 +30,13 @@
   height: auto;
   width: 120px;
   margin: 0px 24px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
 		width: 90px;
-    margin: 8px 12px;
+    margin: 12px 12px;
+	}
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+		width: 120px;
+    margin: 12px 12px;
 	}
 }

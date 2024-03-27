@@ -102,19 +102,19 @@
 //=================== tablet style ===================//
 //=====================================================//
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
 
   .box_one{
   grid-template-columns: 1fr 1fr;
   }
 
   .card_one , .card_four{
-    font-size: 0.75rem;
-    height: 350px;
+    // font-size: 0.75rem;
+    height: 450px;
   }
 
-  .card_four .img-homepage , .card_one .img-homepage{
-    padding-bottom: 38px;
+  .card_one .img-homepage{
+    padding-bottom: 8px;
   }
 
   .card_one h4{
@@ -122,8 +122,9 @@
   }
 
   .card_two img , .card_three img {
-    height: 350px;
+    // height: 350px;
     width: 100%;
+    margin-top: 50px;
   }
 }
 
@@ -131,7 +132,7 @@
 //=================== desktop style ===================//
 //=====================================================//
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
 
   .box_one{
   grid-template-columns: 1fr 1fr;
