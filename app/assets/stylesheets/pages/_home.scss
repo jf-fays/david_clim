@@ -1,5 +1,5 @@
   .banner{
-    background-image:linear-gradient(310deg,(rgba(0,0,0,0.1) 34% ,rgba(0,0,0,0.7)100%)), url(salon-clim3.jpg);
+    background-image:linear-gradient(310deg,(rgba(0,0,0,0.1) 44% ,rgba(0,0,0,0.7)100%)), url(salon-clim3.jpg.webp);
 
     background-position: center;
     background-size: cover;
@@ -8,8 +8,10 @@
     height: 750px;
     display: flex;
     flex-direction: column;
-    @media screen and (max-width: 768px) {
-      background-image:linear-gradient(310deg,(rgba(0,0,0,0.1) 34% ,rgba(0,0,0,0.7)100%)), url(salon-clim3.jpg);
+
+    @media screen and (max-width: 767px) {
+      background-image:linear-gradient(310deg,(rgba(0,0,0,0.1) 44% ,rgba(0,0,0,0.7)100%)), url(salon-clim3.jpg.webp);
+      // background-image: url(salon-clim3.jpg.webp);
       height: 532px;
     }
   }
@@ -22,12 +24,16 @@
     flex-direction: column;
     padding-left: 250px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       text-align: center;
       align-items: center;
       justify-content: center;
       padding-left: 0px;
       padding: 10px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      padding-left: 124px;
     }
   }
 
@@ -37,11 +43,16 @@
     color: white;
     padding: 0 0 8px 0px;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    @media screen and (max-width: 769px) {
+
+    @media screen and (max-width: 767px) {
     // display: none;
     font-size: 1.4rem;
     padding: 0 0 8px 0px;
     margin: 0;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      font-size: 1.8rem;
     }
   }
 
@@ -51,11 +62,16 @@
     color: white;
     padding: 0px;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    @media screen and (max-width: 769px) {
+
+    @media screen and (max-width: 767px) {
     font-size: 1rem;
     padding: 0px;
     margin: 0;
     padding-top: 8px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      font-size: 1.4rem;
     }
   }
 
@@ -64,9 +80,14 @@
     padding: 96px 0 96px 200px;
     width: 64%;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       padding: 40px;
       width: 100%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      // padding: 40px;
+      width: 75%;
     }
   }
 
@@ -79,11 +100,12 @@
     text-align: center;
     border-left: 3px solid #459bda;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       font-size: 1.6rem;
       padding: 0 0 0 32px;
       display: none;
     }
+
   }
 
   .title-homepage h3 {
@@ -92,7 +114,7 @@
     margin: 0;
     color: rgba( 24, 55, 59, 100%);
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       font-size: 1rem;
       padding: 0;
       line-height: 1.6rem;
@@ -107,7 +129,7 @@
     line-height: 1.6rem;
     margin-bottom: 20px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       font-size: 0.95rem;
       border-left: 3px solid #459bda;
       padding-left: 8px;
@@ -130,7 +152,7 @@
     margin-top: 64px;
     margin-bottom: 32px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       margin-top: 40px;
       margin-bottom: 20px;
     }
@@ -141,7 +163,7 @@
 
     font-weight: bold;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       font-size: 1.4rem;
     }
   }
@@ -152,7 +174,7 @@
     justify-items: center;
     height: 100%;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1023px) {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
@@ -161,7 +183,7 @@
     height: 104px;
     width: 104px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       height: 70px;
       width: 70px;
     }
@@ -171,7 +193,7 @@
     color: rgba( 104, 104, 104, 100%);
     font-size: 0.9rem;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       font-size: 0.85rem;
     }
   }
@@ -185,7 +207,7 @@
     height: 250px;
     width: 150px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1023px) {
       height: fit-content;
       width: 114px;
     }
