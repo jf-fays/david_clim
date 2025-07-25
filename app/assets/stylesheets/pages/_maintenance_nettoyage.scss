@@ -4,8 +4,12 @@
   padding-top: 90px;
 
   @media screen and (max-width: 767px) {
-    padding-top: 45px;
+    padding: 45px 20px 20px 20px;
 	}
+}
+
+.maintenance-banner > .maintenance{
+  padding: 0;
 }
 
 .cleaning-box{

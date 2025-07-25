@@ -37,22 +37,42 @@
     }
   }
 
-  .banner .banner-text h2 {
+  .banner .banner-text h1 {
     font-family: 'DM Sans',sans-serif;
-    font-size: 40px;
+    // font-size: 40px;
+    font-size: 3.5rem;
+    // font-weight: bold;
+    line-height: 2; // plus aéré que 1 ou 1.1
+    margin-bottom: 12px;
     color: white;
-    padding: 0 0 8px 0px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    // padding: 0 0 8px 0px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 
     @media screen and (max-width: 767px) {
     // display: none;
-    font-size: 1.4rem;
+    font-size: 2rem;
     padding: 0 0 8px 0px;
     margin: 0;
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
-      font-size: 1.8rem;
+      font-size: 3rem;
+    }
+  }
+
+  .banner .banner-text h1 span {
+    // font-weight: 300;
+  font-size: 2.5rem;
+  display: block;
+  line-height: 1.4;
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 1.3rem;
+      line-height: 1.4;
     }
   }
 
@@ -77,16 +97,16 @@
 
   .title-homepage {
     background-color: white;
-    padding: 96px 0 96px 200px;
+    padding: 96px 0 140px 200px;
     width: 64%;
 
     @media screen and (max-width: 767px) {
-      padding: 40px;
+      padding: 60px 40px;
       width: 100%;
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
-      // padding: 40px;
+      padding: 96px 0 96px 100px;
       width: 75%;
     }
   }
@@ -177,6 +197,11 @@
     @media screen and (max-width: 1023px) {
       grid-template-columns: 1fr 1fr 1fr;
     }
+    @media screen and (max-width: 767px) {
+      grid-template-columns: 1fr 1fr;
+      padding: 12px 0;
+      row-gap: 10px;
+    }
   }
 
   .medal img{
@@ -211,4 +236,153 @@
       height: fit-content;
       width: 114px;
     }
+  }
+
+
+  .box_one{
+    background-image: linear-gradient(to left bottom, #ffffff 50%, #e4e9fb, #bcd6f7, #2576cd0c);
+    // padding: 0 60px;
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      // padding: 0 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding: 0;
+    }
+
+  }
+
+  .container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    // background-image:linear-gradient(to bottom, rgba(29, 20, 61, 0.5), rgba(29, 20, 61, 0.8)), url(depannage-climatisation-2.png);
+  //   background-image:linear-gradient(to bottom,
+  //   rgba(255, 255, 255, 0.1) 0%,
+  // rgba(133, 198, 239, 0.3) 25%,
+  // rgba(37, 118, 205, 0.65) 60%,
+  // rgba(29, 20, 61, 0.85) 100%
+  // ), url(depannage-climatisation-2.png);
+        background-image: linear-gradient(rgba(255, 180, 50, 0.15), rgba(0, 0, 0, 0.55)), url(depannage-climatisation-2.png);
+
+
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      background-image: linear-gradient(rgba(255, 180, 50, 0.15), rgba(0, 0, 0, 0.55)), url(depannage-climatisation.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .card_three{
+    width: 50%;
+    padding: 0 40px;
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      padding: 0 10px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .card_three img{
+    height: 450px;
+    width: 100%;
+  }
+
+  .card_four{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction:column;
+    margin: auto;
+    padding: 80px 40px;
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      padding: 40px 0;
+      height: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      height: 100%;
+      padding: 40px 40px;
+    }
+  }
+
+  .card_four .list-advantages h2 {
+    // color: #ad8f60;
+    color: white;
+    font-family: Poppins, sans-serif;
+    text-align: left;
+    // font-size: 1.5rem;
+    font-size: 32px;
+    line-height: 1.2em;
+    margin: 32px 0;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0,0,0,1);
+
+    @media screen and (max-width: 767px) {
+      font-size: 22px;
+    }
+  }
+
+  .card_four .list-advantages ul{
+    padding-left: 0;
+  }
+
+  .card_four .list-advantages li{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .card_four .list-advantages li h3{
+    line-height: 1.3em;
+    // font-size: 1.125em;
+    font-size: 24px;
+    font-weight: 600;
+    // color: rgba( 92, 153, 213, 100%);
+    // color: #154370;
+    color: #4da7ff;
+    font-family: Poppins, sans-serif;
+    text-shadow: 1px 1px 2px rgba(0,0,0,1);
+
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+    }
+  }
+
+  .card_four .list-advantages-desc{
+    padding-bottom: 16px;
+    text-align: left;
+
+    p{
+      // color: rgba( 24, 55, 59, 100%);
+      color: white;
+      // font-size: 1rem;
+      font-size: 16px;
+      line-height: 1.6em;
+      margin-bottom: 0;
+      padding-bottom: 16px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,1);
+
+      @media screen and (max-width: 767px) {
+        font-size: 14px;
+      }
+    }
+
   }
