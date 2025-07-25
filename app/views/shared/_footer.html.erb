@@ -1,17 +1,4 @@
 <div class="footer" id="noustrouver">
-    <div class="footer-element footer-links">
-        <div class="footer-title">
-            <h3>Nos services</h3>
-        </div>
-        <div class="footer-link">
-            <ul>
-                <li><i class="fa-solid fa-circle-chevron-right" style="color: #2576ce;"></i><%= link_to "Installation", installation_climatisation_path, style: "padding-left: 14px;" %></li>
-                <li><i class="fa-solid fa-circle-chevron-right" style="color: #2576ce;"></i><%= link_to "Maintenance", maintenance_entretien_climatisation_path, style: "padding-left: 14px;" %></li>
-                <li><i class="fa-solid fa-circle-chevron-right" style="color: #2576ce;"></i><%= link_to "Nettoyage", maintenance_entretien_climatisation_path(anchor: "nettoyage-climatisation"), style: "padding-left: 14px;" %></li>
-                <li><i class="fa-solid fa-circle-chevron-right" style="color: #2576ce;"></i><%= link_to "Dépannage", depannage_climatisation_path, style: "padding-left: 14px;" %></li>
-            </ul>
-        </div>
-    </div>
     <div class="footer-element footer-text">
         <div class="footer-title">
             <h3>Contact</h3>
@@ -23,6 +10,32 @@
               <li><i class="fa-solid fa-clock" style="color: #2576ce;"></i><span style="padding-left: 14px;">Lundi - Vendredi : 8h30/ 19h</span></li>
             </ul>
         </div>
+    </div>
+    <div class="footer-element footer-links">
+        <div class="footer-title">
+            <h3>Services</h3>
+        </div>
+        <div class="footer-link">
+            <ul>
+                <li><i class="fa-solid fa-circle-chevron-right" style="color: #2576ce;"></i><%= link_to "Installation", installation_climatisation_path, style: "padding-left: 14px;" %></li>
+                <li><i class="fa-solid fa-circle-chevron-right" style="color: #2576ce;"></i><%= link_to "Maintenance", maintenance_entretien_climatisation_path, style: "padding-left: 14px;" %></li>
+                <li><i class="fa-solid fa-circle-chevron-right" style="color: #2576ce;"></i><%= link_to "Nettoyage", maintenance_entretien_climatisation_path(anchor: "nettoyage-climatisation"), style: "padding-left: 14px;" %></li>
+                <li><i class="fa-solid fa-circle-chevron-right" style="color: #2576ce;"></i><%= link_to "Dépannage", depannage_climatisation_path, style: "padding-left: 14px;" %></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-element footer-informations footer-links">
+        <div class="footer-title">
+            <h3>Informations</h3>
+
+            </div>
+            <div class="footer-link">
+                    <ul>
+                        <li><i class="fa-solid fa-circle-chevron-right" style="color: #2576ce;"></i><%= link_to "Demande de devis", new_contact_path, style: "padding-left: 14px;" %></li>
+                        <li><i class="fa-solid fa-circle-chevron-right" style="color: #2576ce;"></i><%= link_to "Mentions légales", mentions_legales_path, style: "padding-left: 14px;" %></li>
+                        <li><i class="fa-solid fa-circle-chevron-right" style="color: #2576ce;"></i><%= link_to "Politique de confidentialité", politique_de_confidentialite_path, style: "padding-left: 14px;"%></li>
+                    </ul>
+                </div>
     </div>
   <div class="footer-element logo-footer">
     <%= image_tag "logo_name.png", alt:"David Clim Fréjus Saint-Raphael Installation Entretien Dépannage Maintenance Climatisation Logo Salutis agence" %>

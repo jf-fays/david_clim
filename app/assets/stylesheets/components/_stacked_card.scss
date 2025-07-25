@@ -1,0 +1,116 @@
+:root {
+  --stackcards:4
+  // --stackcardHeight: 60vh;
+  --stackcardTopPadding: 1.5em;
+  --stackcardMargin: 4vw;
+}
+
+.stack-container {
+  width: 60%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 767px) {
+    width: 90%;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: 70%;
+  }
+
+  #stackcards {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(var(--stackcards), var(--stackcardHeight));
+    padding-bottom: calc(var(--stackcardTopPadding) * var(--stackcards));
+    margin-bottom: var(--stackcardMargin);
+  }
+
+  #card-stack1 {
+    --index: 1;
+  }
+
+  #card-stack2 {
+    --index: 2;
+  }
+
+  #card-stack3 {
+    --index: 3;
+  }
+
+  #card-stack4 {
+    --index: 4;
+  }
+
+  .stackcard {
+    position: sticky;
+    top: 70px;
+    padding-top: calc(var(--stackcardTopPadding) * var(--index));
+  }
+
+  #card-stack1 .stack-body{
+    background: linear-gradient(rgba(255, 180, 50, 0.15), rgba(0, 0, 0, 0.15)), url('climatisation-murale.jpg') center/cover no-repeat;
+  }
+
+  #card-stack2 .stack-body{
+    background: linear-gradient(rgba(255, 180, 50, 0.15), rgba(0, 0, 0, 0.15)), url('climatisation-gainable.jpg') center/cover no-repeat;
+  }
+
+  #card-stack3 .stack-body{
+    background: linear-gradient(rgba(255, 180, 50, 0.15), rgba(0, 0, 0, 0.15)), url('climatisation-cassette.jpg') center/cover no-repeat;
+  }
+
+  #card-stack4 .stack-body{
+    background: linear-gradient(rgba(255, 180, 50, 0.15), rgba(0, 0, 0, 0.15)), url('climatisation-console.jpg') center/cover no-repeat;
+  }
+
+  .stack-body{
+    box-sizing: border-box;
+    padding: 140px;
+    border-radius: 12px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+      padding: 40px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      padding: 60px;
+    }
+  }
+
+  .stack-body h3 {
+
+    margin-bottom: 80px;
+    color: white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .stack-body p {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    line-height: 2rem;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+
+    @media screen and (max-width: 767px) {
+      line-height: 1.6rem;
+      font-size: 14px;
+    }
+  }
+}

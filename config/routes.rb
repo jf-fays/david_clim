@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   get "depannage-climatisation", to: "pages#depannage"
   get "climatisation-reversible-pompe-a-chaleur", to: "pages#clim_pompe_a_chaleur"
   get "realisation-climatisation", to: "pages#realisation"
-
+  get "mentions-legales", to: "pages#mentions_legales"
+  get "politique-de-confidentialite", to: "pages#politique_de_confidentialite"
 
   resources :contacts, only: [:new, :create ]
     # get '/contacts', to: 'contacts#new'
