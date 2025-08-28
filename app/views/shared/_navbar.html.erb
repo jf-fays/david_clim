@@ -2,8 +2,8 @@
     <div class="container-fluid">
         <div class="info-contact">
             <%= link_to root_path, class: "navbar-brand" do %>
-            <%= image_tag "logo_name.png", alt:"David Clim Fréjus Saint-Raphael Installation Entretien Dépannage Maintenance Climatisation Logo Salutis agence" %>
-            <span class="sr-only">Accueil</span> <!-- Texte masqué pour les lecteurs d'écran -->
+            <%= image_tag "logo_name.png", alt:"Logo de David Clim" %>
+            <span class="sr-only">Retour à l’accueil – David Clim</span> <!-- Texte masqué pour les lecteurs d'écran -->
             <% end %>
             <div class="info">
                 <div class="phone-number">
@@ -39,12 +39,9 @@
                 <li class="nav-item">
                     <%= link_to "Dépannage".html_safe, depannage_climatisation_path, class: "nav-link" %>
                 </li>
-                <%# <li class="nav-item">
-                    <%= link_to "Climatisation réversible <br />/ Pompe à chaleur".html_safe, climatisation_reversible_pompe_a_chaleur_path, class: "nav-link" %>
+                <%# <li class="nav-item"> %>
+                    <%# <%= link_to "Réalisations", realisation_climatisation_path, class: "nav-link" %>
                 <%# </li> %>
-                <li class="nav-item">
-                    <%= link_to "Réalisations", realisation_climatisation_path, class: "nav-link" %>
-                </li>
                 <li class="nav-item">
                     <%= link_to "Contact", new_contact_path, class: "nav-link" %>
                 </li>

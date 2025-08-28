@@ -6,6 +6,14 @@
 	}
 }
 
+.contact-section {
+  margin-top: 90px;
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+    padding: 45px 20px 0px 20px;
+	}
+}
+
 .introduction-section{
   display: -webkit-flex; /* Safari */
   display: flex;
@@ -29,6 +37,14 @@
   color: rgba( 24, 55, 59, 100%);
   @media screen and (max-width: 768px) {
 		font-size: 1.6rem;
+  }
+}
+
+.title-section > h3{
+  font-size: 1.8rem;
+  color: rgba( 24, 55, 59, 100%);
+  @media screen and (max-width: 768px) {
+		font-size: 1.2rem;
   }
 }
 
