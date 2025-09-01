@@ -1,0 +1,40 @@
+.mentions-legales {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: auto;
+
+  h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: #18373b;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: #18373b;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #18373b;
+  }
+
+  a {
+    color: #007BFF;
+  }
+
+  .salutis-link {
+    color: #18373b;
+    text-decoration: none;
+  // color: #007BFF;
+
+  &:hover {
+    color: #007BFF;
+    text-decoration: none;
+  }
+}
+}
