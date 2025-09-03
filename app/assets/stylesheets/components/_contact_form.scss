@@ -168,6 +168,25 @@
   color: rgba( 116, 116, 116, 100%);
 }
 
+.consent{
+  display: flex;
+  align-items: center; // aligne verticalement
+  gap: 16px;
+  padding-bottom: 16px;
+  font-size: 0.8rem;
+  color: rgba( 116, 116, 116, 100%);
+}
+
+.form-link{
+  color: rgba( 116, 116, 116, 100%);
+  font-size: 0.8rem;
+  text-decoration: underline;
+
+  :hover{
+    color: rgba( 37, 118, 205, 100%);
+  }
+}
+
 .btn-contact{
   background-color: rgba( 240, 188, 69, 100%);
   padding: 12px 45px;

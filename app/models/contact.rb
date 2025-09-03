@@ -5,10 +5,11 @@ class Contact < MailForm::Base
   attribute :city, validate: true
   attribute :email, validate: /\A[^@\s]+@[^@\s]+\z/i
   attribute :message, validate: true, length: { minimum: 2 }
+  attribute :consent, validate: true # RGPD
   attribute :nickname, captcha: true
 
   def headers
-    { subject: "Formulaire de contact",
+    { subject: "Nouveau formulaire de contact depuis le site David Clim",
       to: Rails.application.credentials.dig(:gmail_smtp, :email_receiver),
       from: %("#{last_name}" <#{email}>) }
   end

@@ -62,6 +62,15 @@
                         <%= form.text_area :message, placeholder: 'Rédigez votre message ici', rows: "6", id:"contact_message" %>
                     </div>
 
+                    <div class="consent">
+                        <%= form.check_box :consent, required: true %>
+                        <%= form.label :consent do %>
+                              En envoyant ce formulaire, j’accepte que mes informations soient utilisées pour être recontacté(e)
+                              dans le cadre de ma demande, conformément à la
+                              <%= link_to "politique de confidentialité", politique_de_confidentialite_path, class: "form-link", target: "_blank", rel: "noopener" %>.
+                        <% end %>
+                    </div>
+
                     <div class="hidden d-none">
                         <%= form.label :nickname %>
                         <%= form.text_field :nickname %>
