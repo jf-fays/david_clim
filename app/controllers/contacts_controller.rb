@@ -8,9 +8,9 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contacts_params)
     @contact.request = request
     if @contact.deliver
-      redirect_to new_contact_path, notice: "Message envoyé!"
+      redirect_to new_contact_path, notice: "Merci, nous avons bien reçu votre message. Nous vous répondrons dans les plus brefs délais."
     else
-      flash.now[:alert] = "Un ou plusieurs champs contiennent une erreur. Veuillez vérifier et essayer à nouveau."
+      flash.now[:alert] = "Un ou plusieurs champs sont invalides. Veuillez corriger et réessayer."
       render :new, status: :unprocessable_entity
     end
   end
@@ -30,6 +30,6 @@ class ContactsController < ApplicationController
   private
 
   def contacts_params
-    params.require(:contact).permit(:last_name, :email, :city, :phone_number, :message)
+    params.require(:contact).permit(:last_name, :email, :city, :phone_number, :message, :consent, :nickname)
   end
 end
