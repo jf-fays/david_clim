@@ -82,6 +82,8 @@ group :development do
 
   # Favicon for the application
   gem 'rails_real_favicon'
+
+  gem "ruby-lsp", require: false
 end
 
 group :test do

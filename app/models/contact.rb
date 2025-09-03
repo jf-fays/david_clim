@@ -8,9 +8,15 @@ class Contact < MailForm::Base
   attribute :consent, validate: true # RGPD
   attribute :nickname, captcha: true
 
-  def headers
-    { subject: "Nouveau formulaire de contact depuis le site David Clim",
-      to: Rails.application.credentials.dig(:gmail_smtp, :email_receiver),
-      from: %("#{last_name}" <#{email}>) }
+  # def headers
+  #   { subject: "Nouveau message — David Clim.fr",
+  #     to: Rails.application.credentials.dig(:gmail_smtp, :email_receiver),
+  #     from: %("#{last_name}" <#{email}>) }
+  # end
+
+  def deliver
+    return false unless valid?
+    ContactMailer.new_contact(self).deliver_now
+    true
   end
 end

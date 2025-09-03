@@ -1,0 +1,14 @@
+📩 Nouveau message depuis David Clim
+------------------------------------
+
+Nom : <%= @contact.last_name %>
+Téléphone : <%= @contact.phone_number %>
+Ville : <%= @contact.city %>
+Email : <%= @contact.email %>
+Consentement RGPD : <%= @contact.consent == "1" ? "Oui" : "Non" %>
+
+Message :
+<%= @contact.message %>
+
+------------------------------------
+Cet email a été généré automatiquement par le site David Clim.
