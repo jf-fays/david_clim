@@ -9,7 +9,7 @@ class Contact < MailForm::Base
   attribute :nickname, captcha: true
 
   def headers
-    { subject: "Nouveau formulaire de contact depuis le site David Clim",
+    { subject: "Nouveau formulaire de contact DavidClim.fr",
       to: Rails.application.credentials.dig(:gmail_smtp, :email_receiver),
       from: %("#{last_name}" <#{email}>) }
   end
