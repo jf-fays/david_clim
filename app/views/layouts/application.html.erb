@@ -20,6 +20,7 @@
 
     <title><%= meta_title %></title>
     <meta name="description" content="<%= meta_description %>">
+    <meta name="robots" content="<%= content_for?(:meta_robots) ? yield(:meta_robots) : 'index, follow' %>">
 
     <!-- Facebook Open Graph data -->
     <meta property="og:title" content="<%= meta_title %>" />
