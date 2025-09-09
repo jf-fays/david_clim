@@ -10,6 +10,9 @@ gem "mail_form", "~> 1.10"
 # - ruby "3.1.2"
 ruby "3.3.9"
 
+# sitemap
+gem 'sitemap_generator', '~> 6.1'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 # - gem "rails", "~> 7.0.4", ">= 7.0.4.3"
 gem "rails", "~> 7.2.2", ">= 7.2.2.2"
