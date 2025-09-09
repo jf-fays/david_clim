@@ -38,7 +38,7 @@ SitemapGenerator::Sitemap.create do
   add new_contact_path,                priority: 0.7, changefreq: 'yearly'
 
   # Pages légales (faible priorité)
-  add mentions_legales_path,           priority: 0.1, changefreq: 'yearly'
-  add politique_de_confidentialite_path, priority: 0.1, changefreq: 'yearly'
+  # add mentions_legales_path,           priority: 0.1, changefreq: 'yearly'
+  # add politique_de_confidentialite_path, priority: 0.1, changefreq: 'yearly'
 
 end
