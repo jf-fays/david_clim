@@ -1,21 +1,34 @@
 require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
-  config.action_mailer.default_url_options = { host: "https://david-clim.herokuapp.com" }
+  # config.action_mailer.default_url_options = { host: "https://david-clim.herokuapp.com" }
   # Settings specified here will take precedence over those in config/application.rb.
+  config.action_mailer.default_url_options = { host: "https://www.davidclim.fr" }
   config.action_mailer.perform_deliveries = true
   config.action_mailer.delivery_method = :smtp
+
   config.action_mailer.smtp_settings = {
-    address:         'smtp.gmail.com',
-    port:            587,
-    domain:          'gmail.com',
-    user_name:       Rails.application.credentials.dig(:gmail_smtp, :email),
-    password:        Rails.application.credentials.dig(:gmail_smtp, :password),
-    authentication:  'plain',
-    enable_starttls: true,
-    open_timeout:    5,
-    read_timeout:    5
+    address:              'ssl0.ovh.net',
+    port:                 587,
+    domain:               'davidclim.fr',
+    user_name:            Rails.application.credentials.dig(:ovh_smtp, :email),
+    password:             Rails.application.credentials.dig(:ovh_smtp, :password),
+    authentication:       :login,             # (:login ou :plain) OVH accepte les deux
+    enable_starttls_auto: true,
+    open_timeout:         5,
+    read_timeout:         5
   }
+  # config.action_mailer.smtp_settings = {
+  #   address:         'smtp.gmail.com',
+  #   port:            587,
+  #   domain:          'gmail.com',
+  #   user_name:       Rails.application.credentials.dig(:gmail_smtp, :email),
+  #   password:        Rails.application.credentials.dig(:gmail_smtp, :password),
+  #   authentication:  'plain',
+  #   enable_starttls: true,
+  #   open_timeout:    5,
+  #   read_timeout:    5
+  # }
 
   # config.mailer_sender = Rails.application.credentials.dig(:gmail_smtp, :email)
   # Code is not reloaded between requests.
