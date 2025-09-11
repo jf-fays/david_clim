@@ -108,6 +108,25 @@
   padding-bottom: 12px;
 }
 
+.footer-links .footer-link ul > li,
+.footer-text .footer-information ul > li > i {
+  display: flex;
+  align-items: center;
+}
+
+.footer-links .footer-link ul > li,
+.footer-text .footer-information ul > li > span {
+  color: white;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.footer-links .footer-link ul > li,
+.footer-text .footer-information ul > li > span > .footer-phone {
+  text-decoration: none;
+  color: white;
+}
+
 .footer-links .footer-link ul > li > a {
   text-decoration: none;
   color: white;
@@ -120,6 +139,7 @@
     color: rgba(92, 153, 213, 1);
   }
 }
+
 
 .footer span {
   color: white;
