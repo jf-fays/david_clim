@@ -95,13 +95,14 @@
     display: none;
   }
 
-  .navbar-lewagon .info-contact .phone-number > p {
+  .navbar-lewagon .info-contact .phone-number > .phone-number-link {
     margin: 0;
     font-weight: 600;
     font-size: 1rem;
     // color: rgba( 92, 153, 213, 100%);
     // color: rgba( 69, 155, 218, 100%);
     color: rgba( 37, 118, 205, 100%);
+    text-decoration: none;
   }
 
   .navbar-lewagon .navbar-collapse .navbar-nav a{
@@ -226,13 +227,14 @@
     margin: auto 16px;
   }
 
-  .navbar-lewagon .info-contact .phone-number > p {
+  .navbar-lewagon .info-contact .phone-number > .phone-number-link {
     margin: 0;
     font-weight: 600;
     font-size: 22px;
     // color: rgba( 92, 153, 213, 100%);
     // color: rgba( 69, 155, 218, 100%);
     color: rgba( 37, 118, 205, 100%);
+    text-decoration: none;
   }
 
   .navbar-lewagon .info-contact .quotes{
@@ -342,13 +344,14 @@
     margin: auto 16px;
   }
 
-  .navbar-lewagon .info-contact .phone-number > p {
+  .navbar-lewagon .info-contact .phone-number > .phone-number-link {
     margin: 0;
     font-weight: 600;
-    font-size: 26px;
+    font-size: 24px;
     // color: rgba( 92, 153, 213, 100%);
     // color: rgba( 69, 155, 218, 100%);
     color: rgba( 37, 118, 205, 100%);
+    text-decoration: none;
   }
 
   .navbar-lewagon .info-contact .quotes{
@@ -429,13 +432,14 @@
 
 @media screen and (max-width: 767px) {
 
-  .navbar-lewagon .info-contact .home-phone > p {
+  .navbar-lewagon .info-contact .home-phone > .phone-number-link {
     margin: 0;
     font-weight: 600;
     font-size: 1rem;
     // color: rgba( 92, 153, 213, 100%);
     // color: rgba( 69, 155, 218, 100%);
     color: white;
+    text-decoration: none;
   }
 
   .navbar .container-fluid .navbar-toggler .home-lines .line {
@@ -493,13 +497,14 @@
     -moz-box-shadow: 1px 5px 15px 2px transparent;
   }
 
-  .navbar-lewagon .info-contact .home-phone > p {
+  .navbar-lewagon .info-contact .home-phone > .phone-number-link {
     margin: 0;
     font-weight: 600;
     font-size: 22px;
     // color: rgba( 92, 153, 213, 100%);
     // color: rgba( 69, 155, 218, 100%);
     color: white;
+    text-decoration: none;
   }
 }
 
@@ -535,12 +540,13 @@
     -moz-box-shadow: 1px 5px 15px 2px transparent;
   }
 
-  .navbar-lewagon .info-contact .home-phone > p {
+  .navbar-lewagon .info-contact .home-phone > .phone-number-link {
     margin: 0;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 24px;
     // color: rgba( 92, 153, 213, 100%);
     // color: rgba( 69, 155, 218, 100%);
     color: white;
+    text-decoration: none;
   }
 }

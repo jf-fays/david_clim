@@ -18,6 +18,40 @@
 
     <meta name="format-detection" content="telephone=no">
 
+    <!-- Site name pour Google -->
+    <script type="application/ld+json">
+    <%= raw({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://www.davidclim.fr/#website",
+      "url": "https://www.davidclim.fr/",
+      "name": "David Clim",
+      "alternateName": "DavidClim",
+      "publisher": { "@id": "https://www.davidclim.fr/#organization" }
+    }.to_json) %>
+    </script>
+
+    <!-- Entité locale (HVACBusiness) -->
+    <script type="application/ld+json">
+    <%= raw({
+      "@context": "https://schema.org",
+      "@type": ["Organization", "HVACBusiness"],
+      "@id": "https://www.davidclim.fr/#organization",
+      "name": "David Clim",
+      "url": "https://www.davidclim.fr/",
+      "telephone": "+33611964486",
+      "logo": asset_url("logo_name.png"),
+      "image": asset_url("og-installation.png"),
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Fréjus",
+        "postalCode": "83600",
+        "addressCountry": "FR"
+      },
+      "areaServed": ["Fréjus", "Saint-Raphaël", "Var (83)", "Alpes-Maritimes (06)"]
+    }.to_json) %>
+    </script>
+
     <title><%= meta_title %></title>
     <meta name="description" content="<%= meta_description %>">
     <meta name="robots" content="<%= content_for?(:meta_robots) ? yield(:meta_robots) : 'index, follow' %>">
@@ -37,7 +71,6 @@
     <meta name="twitter:description" content="<%= meta_description %>">
     <meta name="twitter:creator" content="<%= DEFAULT_META["twitter_account"] %>">
     <meta name="twitter:image:src" content="<%= meta_image %>">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <%# font %>
     <link rel="preconnect" href="https://fonts.googleapis.com">

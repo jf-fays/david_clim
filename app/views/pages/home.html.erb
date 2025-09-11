@@ -13,7 +13,8 @@
             <% end %>
             <div class="info">
                 <div class="phone-number home-phone">
-                    <p>06 11 96 44 86</p>
+                    <%# <p>06 11 96 44 86</p> %>
+                    <%= link_to "06 11 96 44 86", "tel:+33611964486", class: "phone-number-link", aria: { label: "Appeler David Clim au 06 11 96 44 86" } %>
                 </div>
                 <div class="quotes">
                     <%= link_to "Demandez un devis", new_contact_path, class: "nav-link" %>
